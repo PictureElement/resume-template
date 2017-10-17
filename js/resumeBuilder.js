@@ -31,6 +31,7 @@ var skills = ["HTML", "CSS", "JS"];
 $("#main").append(skills);
 */
 
+/// Work object 
 var work = {
     "jobs": [{
             "employer": "Google",
@@ -49,6 +50,7 @@ var work = {
     ]
 }
 
+// Projects object
 var projects = {
     "projects": [{
             "title": "basic-keylogger-c-plus-plus",
@@ -65,6 +67,7 @@ var projects = {
     ]
 }
 
+// Bio object
 var bio = {
     "name": "Marios Sofokleous",
     "role": "Web Developer",
@@ -82,6 +85,7 @@ var bio = {
     "biopic": "./images/id.jpg"
 };
 
+// Education object
 var education = {
     "schools": [{
             "name": "University of Cyprus",
@@ -115,14 +119,12 @@ var education = {
     ]
 }
 
-/* 
- * Write an if statement that checks whether there are any skills in the bio
- * object. If the if statement evaluates to true, append HTMLskillsStart to
- * the div with id=header. Then append the skills to the element with
- * id=skills using HTMLskills to format each skill.
- * Append an h1 element to the document in order to make the #header element
- * visible (see index.html body script).
- */
+// Write an if statement that checks whether there are any skills in the bio
+// object. If the if statement evaluates to true, append HTMLskillsStart to
+// the div with id=header. Then append the skills to the element with
+// id=skills using HTMLskills to format each skill.
+// Append an h1 element to the document in order to make the #header element
+// visible (see index.html body script).
 
 // JS replace() method
 var formattedHeaderName = HTMLheaderName.replace("%data%", bio.name);
@@ -186,12 +188,10 @@ function displayWork() {
 
 displayWork();
 
-/* 
- * 1. Encapsulate display() function within the projects object.
- * 2. By invoking projects.display(), all of your projects information
- * should be appended to the projects section.
- * Hint: You'll need to start each new project with a HTMLprojectStart.
- */
+// 1. Encapsulate display() function within the projects object.
+// 2. By invoking projects.display(), all of your projects information should
+// be appended to the projects section.
+// Hint: You'll need to start each new project with a HTMLprojectStart
 
 // Function within object (function encapsulation)
 projects.display = function() {
@@ -226,15 +226,14 @@ projects.display = function() {
 // Invoke function (append all projects information to the projects section)
 projects.display();
 
-/*
- * Add an interactive Google map to the resume
- *
- * There are two more steps required to make the map work properly:
- *
- * 1. Uncomment the last block of code in helper.js. The code you need starts * with window.addEventListener('load', initializeMap); and goes until the end 
- * of the file.
- *
- * 2. Uncomment the <script> tag for Google Maps API in the <head> of
- * index.html.
- */
+// Add an interactive Google map to the resume
+//
+// There are two more steps required to make the map work properly:
+//
+// 1. Uncomment the last block of code in helper.js. The code you need starts
+// with window.addEventListener('load', initializeMap); and goes until the end 
+// of the file.
+//
+// 2. Uncomment the <script> tag for Google Maps API in the <head> of
+// index.html.
 $("#mapDiv").append(googleMap);
