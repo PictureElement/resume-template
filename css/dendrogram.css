@@ -1,0 +1,26 @@
+/* Dendrogram styling */
+
+#lets-connect {
+    text-align: center;
+}
+
+.node circle {
+    fill: lime;
+}
+
+.node text {
+    font: 10px "Roboto", sans-serif;
+    fill: black;
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.node--internal circle {
+    fill: lime;
+}
+
+.link {
+    fill: none;
+    stroke: #555;
+    stroke-opacity: 0.4;
+    stroke-width: 1.5px;
+}

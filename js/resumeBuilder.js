@@ -31,6 +31,8 @@ var skills = ["HTML", "CSS", "JS"];
 $("#main").append(skills);
 */
 
+//*********************************** DATA ************************************
+
 /// Work object 
 var work = {
     "jobs": [{
@@ -74,7 +76,7 @@ var bio = {
     "sex": "Male",
     "nationality": "Cypriot",
     "birthday": "17/12/1990",
-    "welcomeMessage": "Hi, folks. Welcome to my personal site!",
+    "welcomeMessage": "Hi, folks. Welcome to my online resume!",
     "contacts": {
         "phone": "(+357) 99 111 844",
         "email": "marios.sofokleous@yandex.com",
@@ -119,57 +121,63 @@ var education = {
     ]
 }
 
-// Write an if statement that checks whether there are any skills in the bio
-// object. If the if statement evaluates to true, append HTMLskillsStart to
-// the div with id=header. Then append the skills to the element with
-// id=skills using HTMLskills to format each skill.
-// Append an h1 element to the document in order to make the #header element
-// visible (see index.html body script).
+//******************************* HEADER BUILD ********************************
 
+// Append name
 // JS replace() method
 var formattedHeaderName = HTMLheaderName.replace("%data%", bio.name);
 // jQuerry's append() method
 $("#header").append(formattedHeaderName);
 
+// Append role
 var formattedHeaderRole = HTMLheaderRole.replace("%data%", bio.role);
-// jQuerry's append() method
 $("#header").append(formattedHeaderRole);
 
+// Append header-entry
 $("#header").append(HTMLheaderStart);
+
+// Append pic-wrapper
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
-// jQuerry's append() method
 $(".header-entry").append(formattedBioPic);
+
+// Append summary-wrapper
 $(".header-entry").append(HTMLsummaryStart);
+
+// Append welcome-message
 var formattedSummaryWelcomeMsg = HTMLsummaryWelcomeMsg.replace("%data%", bio.welcomeMessage);
 $(".summary-wrapper").append(formattedSummaryWelcomeMsg);
+
+// Append address
 var formattedSummaryAddress = HTMLsummaryAddress.replace("%data%", bio.contacts.address);
 $(".summary-wrapper").append(formattedSummaryAddress);
+
+// Append phone
 var formattedSummaryPhone = HTMLsummaryPhone.replace("%data%", bio.contacts.phone);
 $(".summary-wrapper").append(formattedSummaryPhone);
+
+// Append Email
 var formattedSummaryEmail = HTMLsummaryEmail.replace("%data%", bio.contacts.email);
 $(".summary-wrapper").append(formattedSummaryEmail);
+
+// Append GitHub
 var formattedSummaryGithub = HTMLsummaryGithub.replace("%data%", bio.contacts.github);
 $(".summary-wrapper").append(formattedSummaryGithub);
+
+// Append Skype
 var formattedSummarySkype = HTMLsummarySkype.replace("%data%", bio.contacts.skype);
 $(".summary-wrapper").append(formattedSummarySkype);
+
+// Append Sex, Birthday and Nationality
 var formattedSummaryMore = HTMLsummaryMore.replace("%data1%", bio.sex);
 var formattedSummaryMore = formattedSummaryMore.replace("%data2%", bio.birthday);
 var formattedSummaryMore = formattedSummaryMore.replace("%data3%", bio.nationality);
 $(".summary-wrapper").append(formattedSummaryMore);
 
+//************************** SKILLS(DENDROGRAM) BUILD *************************
 
 
 
-
-
-
-
-
-
-
-
-$("#skills").append(HTMLskillsStart);
-
+/*
 function displayWork() {
     for (var job of work.jobs) {
         $("#workExperience").append(HTMLworkStart);
@@ -237,3 +245,4 @@ projects.display();
 // 2. Uncomment the <script> tag for Google Maps API in the <head> of
 // index.html.
 $("#mapDiv").append(googleMap);
+*/

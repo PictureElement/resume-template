@@ -1,49 +1,157 @@
-body, div, ul, li, p, h1, h2, h3, h4, h5, h6 {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.clear-fix {
-  overflow: auto;
-}
-
-.education-entry, .work-entry, .project-entry {
-  padding: 0 5%;
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-size: 40px;
-  color: #f5a623;
-  line-height: 48px;
-  display: inline;
+    font-size: 40px;
+    color: #f5a623;
+    line-height: 48px;
+    display: inline;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #999;
+    line-height: 29px;
+    padding: 10px;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000;
-  line-height: 22px;
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+    line-height: 22px;
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
 }
 
-h2, h3, h4, h5 {
-  padding: 10px 5%;
+h2,
+h3,
+h4,
+h5 {
+    padding: 10px 5%;
+}
 
+p {
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
+}
+
+a {
+    color: #1199c3;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    padding: 10px;
+}
+
+
+
+
+
+/************* HEADER *************/
+
+#header {
+    background-color: black;
+    text-align: center;
+    /* mobile-first */
+    width: 100%;
+}
+
+#name {
+    color: red;
+}
+
+#role {
+    color: white;
+}
+
+/* flex container */
+
+.header-entry {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
+
+
+/* flex item */
+
+.pic-wrapper {
+    width: 100%;
+    /* mobile-first */
+    border: 1px solid white;
+    text-align: center;
+}
+
+
+/* flex item */
+
+.summary-wrapper {
+    width: 100%;
+    /* mobile-first */
+    border: 1px solid white;
+}
+
+img.biopic {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.welcome-message {
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.summary-entry {
+    color: lime;
+}
+
+.svg-wrapper {
+  width: 100%;
+  background: gray;
+}
+
+svg {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid blue;
+}
+
+
+
+/*
+.education-entry, .work-entry, .project-entry {
+  padding: 0 5%;
 }
 
 .date-text {
@@ -59,20 +167,7 @@ h2, h3, h4, h5 {
   font-size: 14px;
   color: #999;
   line-height: 16px;
-  /*float: right;*/
-}
-
-p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
-}
-
-a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
+  float: right;
 }
 
 .welcome-message {
@@ -103,11 +198,6 @@ a {
 
 .dark-gray {
   background-color: #4a4a4a;
-}
-
-/* TODO: Replace with image later */
-#header {
-  background-color: black;
 }
 
 .header-entry {
@@ -146,46 +236,12 @@ a {
   padding: 2.5% 5%;
 }
 
-ul {
-  list-style-type: none;
-}
+*/
 
-img {
-  padding: 10px;
-}
-
-span {
-  padding: 5px;
-}
-
-/* Dendrogram styling */
-
-#lets-connect {
-  text-align: center;
-}
-
-.node circle {
-  fill: white;
-}
-
-.node text {
-  font: 10px "Roboto", sans-serif;
-  fill: black; 
-  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
-}
-
-.node--internal circle {
-  fill: white;
-}
-
-.link {
-  fill: none;
-  stroke: #555;
-  stroke-opacity: 0.4;
-  stroke-width: 1.5px;
-}
 
 /* Media queries to handle various device widths */
+
+
 /*
 @media only screen and (max-width: 1024px) {
   #lets-connect {

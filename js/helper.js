@@ -4,8 +4,25 @@
 
 // These are HTML strings. As part of the course, you'll be using JavaScript
 // functions to replace the %data% placeholder text you see in them.
+
+// Header
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
+var HTMLheaderRole = '<p id="role">%data%</p><hr>';
+var HTMLheaderStart = '<div class="header-entry"></div>'
+var HTMLbioPic = '<div class="pic-wrapper"><img width="150" src="%data%" class="biopic"></div>';
+var HTMLsummaryStart = '<div class="summary-wrapper"></div>';
+var HTMLsummaryWelcomeMsg = '<p class="welcome-message">%data%</p>';
+var HTMLsummaryAddress = '<p class="summary-entry">Address: %data%</p>';
+var HTMLsummaryPhone = '<p class="summary-entry">Phone: %data%</p>';
+var HTMLsummaryEmail = '<p class="summary-entry">E-mail: %data%</p>';
+var HTMLsummaryGithub = '<p class="summary-entry">GitHub: %data%</p>';
+var HTMLsummarySkype = '<p class="summary-entry">Skype: %data%</p>';
+var HTMLsummaryMore = '<p class="summary-entry">Sex: %data1% | Birthday: %data2% | Nationality: %data3%</p>';
+
+
+
+
+
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
@@ -15,18 +32,11 @@ var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><
 var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
-var HTMLheaderStart = '<div class="header-entry"></div>'
-var HTMLbioPic = '<div class="pic-wrapper"><img width="200" src="%data%" class="biopic"></div>';
-var HTMLsummaryStart = '<div class="summary-wrapper"></div>';
-var HTMLsummaryWelcomeMsg = '<p class="welcome-message">%data%</p>';
-var HTMLsummaryAddress = '<p>Address: %data%</p>';
-var HTMLsummaryPhone = '<p>Phone: %data%</p>';
-var HTMLsummaryEmail = '<p>E-mail: %data%</p>';
-var HTMLsummaryGithub = '<p>GitHub: %data%</p>';
-var HTMLsummarySkype = '<p>Skype: %data%</p>';
-var HTMLsummaryMore = '<p>Sex: %data1% | Birthday: %data2% | Nationality: %data3%</p>';
 
-var HTMLskillsStart = '<h2 id="skills-h2">Skills</h2><div class="graph-entry"><svg id="graph-svg" width="600" height="600"></svg></div>';
+
+
+
+
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';

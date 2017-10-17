@@ -8,10 +8,10 @@
         <title>Resume</title>
         <!-- Font Awesome CDN -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/grid.css">
         <!-- Load the page styles -->
         <link href="css/style.css" rel="stylesheet">
+        <!-- Dendrogram styling -->
+        <link href="css/dendrogram.css" rel="stylesheet">
         <!-- Add an interactive Google Map to your resume -->
         <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
     </head>
@@ -23,6 +23,10 @@
         <main id="main">
             <section id="skills">
                 <h2>Skills</h2>
+                <div class="svg-wrapper">
+                    <!-- Embed dendrogram -->
+                    <svg width="768" height="900" preserveAspectRatio="none" viewBox="0 0 768 900"></svg>
+                </div>
             </section>
             <section id="workExperience">
                 <h2>Work Experience</h2>
@@ -49,14 +53,13 @@
         <script src="js/jQuery.js"></script>
         <!-- More on helper.js in the class -->
         <script src="js/helper.js"></script>
-        <!-- D3 is a popular JavaScript graph library -->
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-        <!-- Skill dendrogram generation -->
-        <script src="js/skillsDendrogram.js"></script>
         <!-- 
         In resumeBuilder.js, you'll be writing code that builds the resume dynamically when this website, index.html, is opened.
         -->
         <script src="js/resumeBuilder.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <!-- Dendrogram generation -->
+        <script src="js/dendrogram.js"></script>
     </body>
 
 </html>

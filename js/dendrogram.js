@@ -1,24 +1,26 @@
-// Skills dendrogram generation
-//
-// Note: A dendrogram is a node-link diagram that places leaf nodes of the 
-// tree at the same depth
+// A dendrogram is a node-link diagram that places leaf nodes of the tree at
+// the same depth.
 
-var svg = d3.select("#graph-svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height"),
-    g = svg.append("g").attr("transform", "translate(100,0)");
+// Dendrogram generation
+
+// Select svg tag
+var svg = d3.select("svg"),
+    // Get width
+    width = svg.attr("width"),
+    // Get height
+    height = svg.attr("height"),
+    // Append into the DOM
+    g = svg.append("g").attr("transform", "translate(0,0)");
 
 var tree = d3.cluster()
-    .size([height, width - 250]);
+    .size([height, width]);
 
 var stratify = d3.stratify()
     .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
 
 // By default, for security reasons Google Chrome does not load local files.
-//
 // In order to use local files, you need to start a simple server (e.g.
 // http-server) on your computer.
-//
 // Also be sure to enable CORS to have access to the file.
 d3.csv("http://127.0.0.1:8080/skills.csv", function(error, data) {
   if (error) throw error;
