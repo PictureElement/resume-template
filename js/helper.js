@@ -9,7 +9,7 @@
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span id="role">%data%</span><hr>';
 var HTMLheaderStart = '<div class="header-entry"></div>'
-var HTMLbioPic = '<div class="pic-wrapper"><img width="150" src="%data%" class="biopic"></div>';
+var HTMLbioPic = '<div class="pic-wrapper"><img width="100" src="%data%" class="biopic"></div>';
 var HTMLsummaryStart = '<div class="summary-wrapper"></div>';
 var HTMLsummaryWelcomeMsg = '<div class="welcome-message">%data%</div>';
 var HTMLsummaryAddress = '<div class="summary-entry"><span>Address</span> %data%</div>';
@@ -35,18 +35,18 @@ var HTMLprojectDescription = '<p class="clear-float">%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
 // Education
-var HTMLschoolsTitle = '<h3>Formal Education</h3>';
+var HTMLschoolsStart = '<div id="schools-wrapper"><h3>Formal Education</h3></div>';
 
-var HTMLschoolStart = '<div class="school-entry"></div>';
+var HTMLschoolEntry = '<div class="school-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = ' - %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<div class="clear-float"><em>Major: %data%</em></div>';
 
-var HTMLonlineCoursesTitle = '<h3>Online Courses</h3>';
+var HTMLonlineCoursesStart = '<div id="online-courses-wrapper"><h3>Online Courses</h3></div>';
 
-var HTMLonlineCourseStart = '<div class="onlineCourse-entry"></div>';
+var HTMLonlineCourseEntry = '<div class="online-course-entry"></div>';
 var HTMLonlineCourseTitle = '<a href="#">%data%';
 var HTMLonlineCourseSchool = ' - %data%</a>';
 var HTMLonlineCourseDates = '<div class="date-text">%data%</div>';

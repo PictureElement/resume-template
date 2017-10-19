@@ -231,8 +231,8 @@ projects.display();
 
 //***************************** EDUCATION BUILD *******************************
 
-// Append title
-$("#education").append(HTMLschoolsTitle);
+//****** DISPLAY SCHOOLS ******
+$("#education").append(HTMLschoolsStart);
 
 // Function within object (function encapsulation)
 education.displaySchools = function() {
@@ -240,7 +240,7 @@ education.displaySchools = function() {
     for (var school of education.schools) {
 
         // Education entry
-        $("#education").append(HTMLschoolStart);
+        $("#schools-wrapper").append(HTMLschoolEntry);
 
         // Entry information
         var formattedSchoolName = HTMLschoolName.replace("%data%", school.name);
@@ -260,8 +260,8 @@ education.displaySchools = function() {
 
 education.displaySchools();
 
-// Append title
-$("#education").append(HTMLonlineCoursesTitle);
+//****** DISPLAY ONLINE COURSES ******
+$("#education").append(HTMLonlineCoursesStart);
 
 // Function within object (function encapsulation)
 education.displayOnlineCourses = function() {
@@ -269,7 +269,7 @@ education.displayOnlineCourses = function() {
     for (var onlineCourse of education.onlineCourses) {
 
         // Education entry
-        $("#education").append(HTMLonlineCourseStart);
+        $("#online-courses-wrapper").append(HTMLonlineCourseEntry);
 
         // Entry information
         var formattedOnlineCourseTitle = HTMLonlineCourseTitle.replace("%data%", onlineCourse.title);
@@ -278,9 +278,9 @@ education.displayOnlineCourses = function() {
         var formattedOnlineCourseUrl = HTMLonlineCourseUrl.replace("%data%", onlineCourse.url);
 
         // Append entry information
-        $(".onlineCourse-entry:last").append(formattedOnlineCourseTitle + formattedOnlineCourseSchool);
-        $(".onlineCourse-entry:last").append(formattedOnlineCourseDates);
-        $(".onlineCourse-entry:last").append(formattedOnlineCourseUrl);
+        $(".online-course-entry:last").append(formattedOnlineCourseTitle + formattedOnlineCourseSchool);
+        $(".online-course-entry:last").append(formattedOnlineCourseDates);
+        $(".online-course-entry:last").append(formattedOnlineCourseUrl);
     }
 }
 

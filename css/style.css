@@ -17,7 +17,6 @@ h6 {
 h1 {
     font-size: 40px;
     color: #f5a623;
-    line-height: 48px;
     display: inline;
 }
 
@@ -25,29 +24,21 @@ h2 {
     font-weight: bold;
     font-size: 24px;
     color: #999;
-    line-height: 29px;
-    padding: 10px;
+    background-color: #f5ae23;
+    padding: 5%;
 }
 
 h3 {
     font-style: italic;
     font-size: 20px;
     color: #000;
-    line-height: 22px;
+    padding: 2.5% 5%;
 }
 
 h4 {
     font-weight: bold;
     font-size: 14px;
     color: #4a4a4a;
-    line-height: 17px;
-}
-
-h2,
-h3,
-h4,
-h5 {
-    padding: 10px 5%;
 }
 
 p {
@@ -68,14 +59,19 @@ ul {
 }
 
 img {
-    padding: 10px;
+    margin: 2.5% 2.5% 0 0;
 }
 
 /************* HEADER *************/
 #header {
-    background-color: #4a4a4a;;
+    background: #4a4a4a;
     text-align: center;
     width: 100%; /* mobile-first */
+    padding: 5% 0;
+}
+
+hr {
+  margin: 5%;
 }
 
 #name {
@@ -92,26 +88,29 @@ img {
 .header-entry {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
 }
 
 /* flex item */
 .pic-wrapper {
     width: 100%; /* mobile-first */
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     text-align: center;
 }
 
 /* flex item */
 .summary-wrapper {
     width: 100%; /* mobile-first */
-    border: 1px solid white;
+    /*border: 1px solid white;*/
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 img.biopic {
     border-radius: 50%;
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 
 .welcome-message {
@@ -147,8 +146,32 @@ svg {
 
 /************* GENERAL *************/
 
-.work-entry, .project-entry, .school-entry, .onlineCourse-entry {
+.work-entry, .project-entry, .school-entry, .online-course-entry {
   padding: 0 5%;
+}
+
+#workExperience > div,
+#projects > div {
+  margin-top: 5%;
+}
+
+#workExperience > div:last-child,
+#projects > div:last-child {
+  margin-bottom: 5%;
+}
+
+#education h3 {
+  background: #4a4a4a;
+}
+
+#schools-wrapper > div,
+#online-courses-wrapper > div {
+  margin-top: 5%;
+}
+
+#schools-wrapper > div:last-child,
+#online-courses-wrapper > div:last-child {
+  margin-bottom: 5%;
 }
 
 .date-text, .location-text {
