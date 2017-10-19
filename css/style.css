@@ -53,7 +53,7 @@ h5 {
 p {
     font-size: 14px;
     color: #333;
-    line-height: 21px;
+    line-height: 1.5;
 }
 
 a {
@@ -71,17 +71,12 @@ img {
     padding: 10px;
 }
 
-
-
-
-
 /************* HEADER *************/
 
 #header {
     background-color: black;
     text-align: center;
-    /* mobile-first */
-    width: 100%;
+    width: 100%; /* mobile-first */
 }
 
 #name {
@@ -93,29 +88,22 @@ img {
 }
 
 /* flex container */
-
 .header-entry {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid white;
 }
 
-
 /* flex item */
-
 .pic-wrapper {
-    width: 100%;
-    /* mobile-first */
+    width: 100%; /* mobile-first */
     border: 1px solid white;
     text-align: center;
 }
 
-
 /* flex item */
-
 .summary-wrapper {
-    width: 100%;
-    /* mobile-first */
+    width: 100%; /* mobile-first */
     border: 1px solid white;
 }
 
@@ -126,18 +114,21 @@ img.biopic {
 }
 
 .welcome-message {
-    color: white;
+    color: #f3f3f3;
     font-style: italic;
     font-size: 20px;
+    line-height: 28px;
 }
 
 .summary-entry {
     color: lime;
 }
 
+/************* HEADER *************/
+
 .svg-wrapper {
-  width: 100%;
-  background: gray;
+    width: 100%;
+    background: gray;
 }
 
 svg {
@@ -147,34 +138,31 @@ svg {
     /*border: 5px solid blue;*/
 }
 
+/************* WORK EXPERIENCE *************/
+
+.date-text, .location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+}
+
+/************* MEDIA QUERIES *************/
+
+@media only screen and (min-width: 768px) {
+  .location-text {
+    float: right;
+  }
+  .date-text {
+    float: left;
+  }
+}
+
 
 
 /*
 .education-entry, .work-entry, .project-entry {
   padding: 0 5%;
-}
-
-.date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: left;
-}
-
-.location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: right;
-}
-
-.welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
 }
 
 .orange {
@@ -200,47 +188,7 @@ svg {
   background-color: #4a4a4a;
 }
 
-.header-entry {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: 1px solid green;
-}
-
-.pic-wrapper {
-  width: 30%;
-  border: 1px solid yellow;
-}
-
-.summary-wrapper {
-  width: 60%;
-  border: 1px solid yellow;
-}
-
-.biopic {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 0;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
-}
-
-.center-content {
-  padding: 2.5% 5%;
-}
-
-*/
-
-
 /* Media queries to handle various device widths */
-
 
 /*
 @media only screen and (max-width: 1024px) {

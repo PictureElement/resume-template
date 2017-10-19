@@ -40,14 +40,14 @@ var work = {
             "title": "Front-end Developer",
             "location": "Mountain View, CA, United States",
             "dates": "July 2014 - Aug. 2017",
-            "description": "Design & implement new user-facing features in Google’s products."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit, dolor sit amet vulputate congue, lectus mi pharetra nisi, ac dignissim erat felis vitae nibh. Integer sed consectetur libero. Vestibulum eget nibh sapien. Mauris odio odio, molestie at laoreet ut, fringilla ac eros. Cras est nibh, aliquam non quam quis, lacinia semper neque. Mauris id neque neque. Maecenas arcu sem, dictum sit amet urna ac, iaculis pharetra dolor."
         },
         {
             "employer": "Yandex",
             "title": "Front-end Developer",
             "location": "Moscow, Russia",
             "dates": "Oct. 2017 - May 2019",
-            "description": "Informant, providing privileged information about Google."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit, dolor sit amet vulputate congue, lectus mi pharetra nisi, ac dignissim erat felis vitae nibh. Integer sed consectetur libero. Vestibulum eget nibh sapien. Mauris odio odio, molestie at laoreet ut, fringilla ac eros. Cras est nibh, aliquam non quam quis, lacinia semper neque. Mauris id neque neque. Maecenas arcu sem, dictum sit amet urna ac, iaculis pharetra dolor."
         }
     ]
 }
@@ -92,18 +92,16 @@ var education = {
     "schools": [{
             "name": "University of Cyprus",
             "location": "Nicosia, Cyprus",
-            "degree": "BEng",
+            "degree": "Bachelor of Engineering",
             "dates": "Sept. 2011 - June 2016",
-            "major": "Computer Engineering",
-            "url": "http://www.ucy.ac.cy"
+            "major": "Computer Engineering"
         },
         {
             "name": "University of California, Berkeley",
             "location": "Berkeley",
             "degree": "MSc",
             "dates": "Sept. 2017 - Sept. 2018",
-            "major": "Computer Science",
-            "url": "http://www.berkeley.edu/"
+            "major": "Computer Science"
         }
     ],
     "onlineCourses": [{
@@ -185,7 +183,7 @@ function displayWork() {
         var formattedWorkDescription = HTMLworkDescription.replace("%data%", job.description);
         // Select the last work-entry element
         $(".work-entry:last").append(formattedWorkEmployer + formattedWorkTitle);
-        $(".work-entry:last").append(formattedWorkDates + "<br>");
+        $(".work-entry:last").append(formattedWorkDates);
         $(".work-entry:last").append(formattedWorkLocation);
         $(".work-entry:last").append(formattedWorkDescription);
     }
@@ -208,11 +206,9 @@ projects.display = function() {
         // Project entry
         $("#projects").append(HTMLprojectStart);
 
-        // Entry title
+        // Entry information
         var formattedProjectTitle = HTMLprojectTitle.replace("%data%", project.title);
-        // Entry dates
         var formattedProjectDates = HTMLprojectDates.replace("%data%", project.dates);
-        // Entry description
         var formattedProjectDescription = HTMLprojectDescription.replace("%data%", project.description);
 
         // Append entry information
@@ -232,6 +228,46 @@ projects.display = function() {
 
 // Invoke function (append all projects information to the projects section)
 projects.display();
+
+//***************************** EDUCATION BUILD *******************************
+
+// Function within object (function encapsulation)
+education.display = function() {
+
+    for (var school of education.schools) {
+
+        // Education entry
+        $("#education").append(HTMLschoolStart);
+
+        // Entry information
+        var formattedSchoolName = HTMLschoolName.replace("%data%", school.name);
+        var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
+        var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", school.major);
+        var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", school.location);
+        var formattedSchoolDates = HTMLschoolDates.replace("%data%", school.dates);
+
+        // Append entry information
+        $(".education-entry:last").append(formattedSchoolName);
+        $(".education-entry:last").append(formattedSchoolDegree);
+        $(".education-entry:last").append(formattedSchoolMajor);
+        $(".education-entry:last").append(formattedSchoolLocation);
+        $(".education-entry:last").append(formattedSchoolDates);
+     
+    }
+}
+
+education.display();
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 // Add an interactive Google map to the resume
