@@ -71,6 +71,13 @@ img {
     padding: 10px;
 }
 
+/* 
+An element that has the clear property set on it will not move up adjacent to the float like the float desires, but will move itself down past the float.
+*/
+.clear-float {
+    clear: both;
+}
+
 /************* HEADER *************/
 
 #header {

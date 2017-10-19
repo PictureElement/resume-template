@@ -99,7 +99,7 @@ var education = {
         {
             "name": "University of California, Berkeley",
             "location": "Berkeley",
-            "degree": "MSc",
+            "degree": "Master of Science",
             "dates": "Sept. 2017 - Sept. 2018",
             "major": "Computer Science"
         }
@@ -231,8 +231,11 @@ projects.display();
 
 //***************************** EDUCATION BUILD *******************************
 
+// Append title
+$("#education").append(HTMLschoolsTitle);
+
 // Function within object (function encapsulation)
-education.display = function() {
+education.displaySchools = function() {
 
     for (var school of education.schools) {
 
@@ -247,21 +250,42 @@ education.display = function() {
         var formattedSchoolDates = HTMLschoolDates.replace("%data%", school.dates);
 
         // Append entry information
-        $(".education-entry:last").append(formattedSchoolName);
-        $(".education-entry:last").append(formattedSchoolDegree);
-        $(".education-entry:last").append(formattedSchoolMajor);
-        $(".education-entry:last").append(formattedSchoolLocation);
-        $(".education-entry:last").append(formattedSchoolDates);
-     
+        $(".school-entry:last").append(formattedSchoolName + formattedSchoolDegree);
+        $(".school-entry:last").append(formattedSchoolDates);
+        $(".school-entry:last").append(formattedSchoolLocation);
+        $(".school-entry:last").append(formattedSchoolMajor);
+
     }
 }
 
-education.display();
+education.displaySchools();
 
+// Append title
+$("#education").append(HTMLonlineCoursesTitle);
 
+// Function within object (function encapsulation)
+education.displayOnlineCourses = function() {
 
+    for (var onlineCourse of education.onlineCourses) {
 
+        // Education entry
+        $("#education").append(HTMLonlineCourseStart);
 
+        // Entry information
+        var formattedOnlineCourseTitle = HTMLonlineCourseTitle.replace("%data%", onlineCourse.title);
+        console.log(formattedOnlineCourseTitle);
+        var formattedOnlineCourseSchool = HTMLonlineCourseSchool.replace("%data%", onlineCourse.school);
+        var formattedOnlineCourseDates = HTMLonlineCourseDates.replace("%data%", onlineCourse.dates);
+        var formattedOnlineCourseUrl = HTMLonlineCourseUrl.replace("%data%", onlineCourse.url);
+
+        // Append entry information
+        $(".onlineCourse-entry:last").append(formattedOnlineCourseTitle + formattedOnlineCourseSchool);
+        $(".onlineCourse-entry:last").append(formattedOnlineCourseDates);
+        $(".onlineCourse-entry:last").append(formattedOnlineCourseUrl);
+    }
+}
+
+education.displayOnlineCourses();
 
 
 

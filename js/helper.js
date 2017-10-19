@@ -25,28 +25,32 @@ var HTMLworkEmployer = '<a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkDescription = '<p class="clear-float">%data%</p>';
 
 // Projects
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
+var HTMLprojectDescription = '<p class="clear-float">%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
 // Education
-var HTMLschoolStart = '<div class="education-entry"></div>';
+var HTMLschoolsTitle = '<h3>Formal Education</h3>';
+
+var HTMLschoolStart = '<div class="school-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
+var HTMLschoolDegree = ' - %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLschoolMajor = '<div class="clear-float"><em>Major: %data%</em></div>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineCoursesTitle = '<h3>Online Courses</h3>';
+
+var HTMLonlineCourseStart = '<div class="onlineCourse-entry"></div>';
+var HTMLonlineCourseTitle = '<a href="#">%data%';
+var HTMLonlineCourseSchool = ' - %data%</a>';
+var HTMLonlineCourseDates = '<div class="date-text">%data%</div>';
+var HTMLonlineCourseUrl = '<a class="clear-float" href="#">%data%</a>';
 
 // Footer
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
