@@ -72,15 +72,14 @@ img {
 }
 
 /************* HEADER *************/
-
 #header {
-    background-color: black;
+    background-color: #4a4a4a;;
     text-align: center;
     width: 100%; /* mobile-first */
 }
 
 #name {
-    color: red;
+    color: #f5ae23;
 }
 
 #role {
@@ -172,14 +171,8 @@ An element that has the clear property set on it will not move up adjacent to th
 
 
 /*
-
-
 .orange {
   background-color: #f5ae23;
-}
-
-.orange-text {
-  color: #f5ae23;
 }
 
 .white-text {
