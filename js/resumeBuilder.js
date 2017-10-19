@@ -55,15 +55,15 @@ var work = {
 // Projects object
 var projects = {
     "projects": [{
-            "title": "basic-keylogger-c-plus-plus",
+            "title": "Project #1",
             "dates": "Nov. 2016 - Mar. 2017",
-            "description": "A basic Windows keylogger in C++ for US standard keyboards.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis porttitor quam. Sed non lacus vitae lacus dapibus auctor. Nullam scelerisque quam lacus, eu aliquet nulla cursus non. Praesent venenatis diam sit amet est eleifend vehicula. Praesent pulvinar neque eu bibendum volutpat. Nunc mattis libero felis, at consectetur mauris porttitor vel. Integer mattis ante id augue semper tempor. Cras turpis nisl, maximus sed lacinia quis, eleifend eget sem. Fusce volutpat enim vitae turpis mattis, faucibus scelerisque tellus posuere. Cras maximus vitae lorem at finibus.",
             "images": ["http://via.placeholder.com/200x100", "http://via.placeholder.com/200x100"]
         },
         {
-            "title": "html5tech-html5",
+            "title": "Project #2",
             "dates": "Feb. 2016 - Present",
-            "description": "Website dedicated to front-end fundamentals.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis porttitor quam. Sed non lacus vitae lacus dapibus auctor. Nullam scelerisque quam lacus, eu aliquet nulla cursus non. Praesent venenatis diam sit amet est eleifend vehicula. Praesent pulvinar neque eu bibendum volutpat. Nunc mattis libero felis, at consectetur mauris porttitor vel. Integer mattis ante id augue semper tempor. Cras turpis nisl, maximus sed lacinia quis, eleifend eget sem. Fusce volutpat enim vitae turpis mattis, faucibus scelerisque tellus posuere. Cras maximus vitae lorem at finibus.",
             "images": ["http://via.placeholder.com/200x100", "http://via.placeholder.com/200x100"]
         }
     ]
