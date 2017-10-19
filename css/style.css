@@ -83,7 +83,9 @@ img {
 }
 
 #role {
-    color: white;
+    display: block; /* mobile-first */
+    color: black;
+    font-weight: 100;
 }
 
 /* flex container */
@@ -113,14 +115,20 @@ img.biopic {
 }
 
 .welcome-message {
-    color: #f3f3f3;
+    color: white;
     font-style: italic;
+    font-weight: bold;
     font-size: 20px;
     line-height: 28px;
 }
 
 .summary-entry {
-    color: lime;
+    color: white;
+}
+
+.summary-entry span {
+    color: #f5ae23;
+    font-weight: bold;
 }
 
 /************* SKILLS *************/
@@ -167,8 +175,6 @@ An element that has the clear property set on it will not move up adjacent to th
     float: left;
   }
 }
-
-
 
 /*
 .orange {

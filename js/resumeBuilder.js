@@ -273,7 +273,6 @@ education.displayOnlineCourses = function() {
 
         // Entry information
         var formattedOnlineCourseTitle = HTMLonlineCourseTitle.replace("%data%", onlineCourse.title);
-        console.log(formattedOnlineCourseTitle);
         var formattedOnlineCourseSchool = HTMLonlineCourseSchool.replace("%data%", onlineCourse.school);
         var formattedOnlineCourseDates = HTMLonlineCourseDates.replace("%data%", onlineCourse.dates);
         var formattedOnlineCourseUrl = HTMLonlineCourseUrl.replace("%data%", onlineCourse.url);

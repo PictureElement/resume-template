@@ -7,17 +7,17 @@
 
 // Header
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<p id="role">%data%</p><hr>';
+var HTMLheaderRole = '<span id="role">%data%</span><hr>';
 var HTMLheaderStart = '<div class="header-entry"></div>'
 var HTMLbioPic = '<div class="pic-wrapper"><img width="150" src="%data%" class="biopic"></div>';
 var HTMLsummaryStart = '<div class="summary-wrapper"></div>';
-var HTMLsummaryWelcomeMsg = '<p class="welcome-message">%data%</p>';
-var HTMLsummaryAddress = '<p class="summary-entry">Address: %data%</p>';
-var HTMLsummaryPhone = '<p class="summary-entry">Phone: %data%</p>';
-var HTMLsummaryEmail = '<p class="summary-entry">E-mail: %data%</p>';
-var HTMLsummaryGithub = '<p class="summary-entry">GitHub: %data%</p>';
-var HTMLsummarySkype = '<p class="summary-entry">Skype: %data%</p>';
-var HTMLsummaryMore = '<p class="summary-entry">Sex: %data1% | Birthday: %data2% | Nationality: %data3%</p>';
+var HTMLsummaryWelcomeMsg = '<div class="welcome-message">%data%</div>';
+var HTMLsummaryAddress = '<div class="summary-entry"><span>Address</span> %data%</div>';
+var HTMLsummaryPhone = '<div class="summary-entry"><span>Phone</span> %data%</div>';
+var HTMLsummaryEmail = '<div class="summary-entry"><span>E-mail</span> %data%</div>';
+var HTMLsummaryGithub = '<div class="summary-entry"><span>GitHub</span> %data%</div>';
+var HTMLsummarySkype = '<div class="summary-entry"><span>Skype</span> %data%</div>';
+var HTMLsummaryMore = '<div class="summary-entry"><span>Sex</span> %data1% | <span>Birthday</span> %data2% | <span>Nationality</span> %data3%</div>';
 
 // Work Experience
 var HTMLworkStart = '<div class="work-entry"></div>';
