@@ -19,6 +19,23 @@ var HTMLsummaryGithub = '<p class="summary-entry">GitHub: %data%</p>';
 var HTMLsummarySkype = '<p class="summary-entry">Skype: %data%</p>';
 var HTMLsummaryMore = '<p class="summary-entry">Sex: %data1% | Birthday: %data2% | Nationality: %data3%</p>';
 
+// Work Experience
+var HTMLworkStart = '<div class="work-entry"></div>';
+var HTMLworkEmployer = '<a href="#">%data%';
+var HTMLworkTitle = ' - %data%</a>';
+var HTMLworkDates = '<div class="date-text">%data%</div>';
+var HTMLworkLocation = '<div class="location-text">%data%</div>';
+var HTMLworkDescription = '<p>%data%</p>';
+
+// Projects
+var HTMLprojectStart = '<div class="project-entry"></div>';
+var HTMLprojectTitle = '<a href="#">%data%</a>';
+var HTMLprojectDates = '<div class="date-text">%data%</div>';
+var HTMLprojectDescription = '<p><br>%data%</p>';
+var HTMLprojectImage = '<img src="%data%">';
+
+
+
 
 
 
@@ -31,25 +48,6 @@ var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span
 var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
-
-
-
-
-
-
-
-var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p>%data%</p>';
-
-var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';

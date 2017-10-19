@@ -74,15 +74,15 @@ var bio = {
     "name": "Marios Sofokleous",
     "role": "Web Developer",
     "sex": "Male",
-    "nationality": "Cypriot",
-    "birthday": "17/12/1990",
+    "nationality": "Greek",
+    "birthday": "12/11/1991",
     "welcomeMessage": "Hi, folks. Welcome to my online resume!",
     "contacts": {
-        "phone": "(+357) 99 111 844",
-        "email": "marios.sofokleous@yandex.com",
+        "phone": "(+357) 96 131 844",
+        "email": "marios.sofokleous@yahoo.com",
         "github": "@PictureElement",
-        "skype": "@sofokleousmarioscy",
-        "address": "14 Georgiou Christoforou, 8046 Pafos (Cyprus)"
+        "skype": "@sofokleousmarios",
+        "address": "13 Michail Christoforou, 8043 Athens, Greece",
     },
     "biopic": "./images/id.jpg"
 };
@@ -173,11 +173,8 @@ var formattedSummaryMore = formattedSummaryMore.replace("%data2%", bio.birthday)
 var formattedSummaryMore = formattedSummaryMore.replace("%data3%", bio.nationality);
 $(".summary-wrapper").append(formattedSummaryMore);
 
-//************************** SKILLS(DENDROGRAM) BUILD *************************
+//*************************** WORK EXPERIENCE BUILD ***************************
 
-
-
-/*
 function displayWork() {
     for (var job of work.jobs) {
         $("#workExperience").append(HTMLworkStart);
@@ -195,6 +192,8 @@ function displayWork() {
 }
 
 displayWork();
+
+//****************************** PROJECTS BUILD *******************************
 
 // 1. Encapsulate display() function within the projects object.
 // 2. By invoking projects.display(), all of your projects information should
@@ -234,6 +233,7 @@ projects.display = function() {
 // Invoke function (append all projects information to the projects section)
 projects.display();
 
+/*
 // Add an interactive Google map to the resume
 //
 // There are two more steps required to make the map work properly:
