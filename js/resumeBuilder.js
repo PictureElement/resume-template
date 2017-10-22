@@ -145,9 +145,9 @@ $(".header-entry").append(HTMLsummaryStart);
 var formattedSummaryWelcomeMsg = HTMLsummaryWelcomeMsg.replace("%data%", bio.welcomeMessage);
 $(".summary-wrapper").append(formattedSummaryWelcomeMsg);
 
-// Append address
-var formattedSummaryAddress = HTMLsummaryAddress.replace("%data%", bio.contacts.address);
-$(".summary-wrapper").append(formattedSummaryAddress);
+// Append location
+var formattedSummaryLocation = HTMLsummaryLocation.replace("%data%", bio.contacts.location);
+$(".summary-wrapper").append(formattedSummaryLocation);
 
 // Append phone
 var formattedSummaryPhone = HTMLsummaryPhone.replace("%data%", bio.contacts.phone);

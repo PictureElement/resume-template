@@ -12,7 +12,7 @@ var HTMLheaderStart = '<div class="header-entry"></div>'
 var HTMLbioPic = '<div class="pic-wrapper"><img width="100" src="%data%" class="biopic"></div>';
 var HTMLsummaryStart = '<div class="summary-wrapper"></div>';
 var HTMLsummaryWelcomeMsg = '<div class="welcome-message">%data%</div>';
-var HTMLsummaryAddress = '<div class="summary-entry"><span>Address</span> %data%</div>';
+var HTMLsummaryLocation = '<div class="summary-entry"><span>Location</span> %data%</div>';
 var HTMLsummaryPhone = '<div class="summary-entry"><span>Phone</span> %data%</div>';
 var HTMLsummaryEmail = '<div class="summary-entry"><span>E-mail</span> %data%</div>';
 var HTMLsummaryGithub = '<div class="summary-entry"><span>GitHub</span> %data%</div>';
