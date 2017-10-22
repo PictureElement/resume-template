@@ -15,8 +15,10 @@ var HTMLsummaryWelcomeMsg = '<div class="welcome-message">%data%</div>';
 var HTMLsummaryLocation = '<div class="summary-entry"><span>Location</span> %data%</div>';
 var HTMLsummaryPhone = '<div class="summary-entry"><span>Phone</span> %data%</div>';
 var HTMLsummaryEmail = '<div class="summary-entry"><span>E-mail</span> %data%</div>';
+var HTMLsummaryWebsite = '<div class="summary-entry"><span>Website</span> %data%</div>';
 var HTMLsummaryGithub = '<div class="summary-entry"><span>GitHub</span> %data%</div>';
 var HTMLsummarySkype = '<div class="summary-entry"><span>Skype</span> %data%</div>';
+var HTMLsummaryMessenger = '<div class="summary-entry"><span>Messenger</span> %data%</div>';
 var HTMLsummaryMore = '<div class="summary-entry"><span>Sex</span> %data1% | <span>Birthday</span> %data2% | <span>Nationality</span> %data3%</div>';
 
 // Work Experience

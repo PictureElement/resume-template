@@ -71,7 +71,7 @@ var projects = {
 
 // Bio object
 var bio = {
-    "name": "Marios Sofokleous",
+    "name": "Mario Sophocleous",
     "role": "Web Developer",
     "sex": "Male",
     "nationality": "Greek",
@@ -79,9 +79,11 @@ var bio = {
     "welcomeMessage": "Hi, folks. Welcome to my online resume!",
     "contacts": {
         "phone": "(+357) 96 131 844",
-        "email": "marios.sofokleous@yahoo.com",
+        "email": "mario.sophocleous@yahoo.com",
+        "website": "mario-sophocleous.com",
         "github": "@PictureElement",
-        "skype": "@sofokleousmarios",
+        "skype": "@sophocleousmario",
+        "messenger": "@mario.sophocleous",
         "location": "Mpotasi 10, Athina 106 82, Greece",
     },
     "biopic": "./images/id.jpg"
@@ -157,6 +159,10 @@ $(".summary-wrapper").append(formattedSummaryPhone);
 var formattedSummaryEmail = HTMLsummaryEmail.replace("%data%", bio.contacts.email);
 $(".summary-wrapper").append(formattedSummaryEmail);
 
+// Append Website
+var formattedSummaryWebsite = HTMLsummaryWebsite.replace("%data%", bio.contacts.website);
+$(".summary-wrapper").append(formattedSummaryWebsite);
+
 // Append GitHub
 var formattedSummaryGithub = HTMLsummaryGithub.replace("%data%", bio.contacts.github);
 $(".summary-wrapper").append(formattedSummaryGithub);
@@ -164,6 +170,10 @@ $(".summary-wrapper").append(formattedSummaryGithub);
 // Append Skype
 var formattedSummarySkype = HTMLsummarySkype.replace("%data%", bio.contacts.skype);
 $(".summary-wrapper").append(formattedSummarySkype);
+
+// Append Messenger
+var formattedSummaryMessenger = HTMLsummaryMessenger.replace("%data%", bio.contacts.messenger);
+$(".summary-wrapper").append(formattedSummaryMessenger);
 
 // Append Sex, Birthday and Nationality
 var formattedSummaryMore = HTMLsummaryMore.replace("%data1%", bio.sex);
