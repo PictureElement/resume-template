@@ -38,7 +38,7 @@ var work = {
     "jobs": [{
             "employer": "Google",
             "title": "Front-end Developer",
-            "location": "Mountain View, CA, United States",
+            "location": "New York, United States",
             "dates": "July 2014 - Aug. 2017",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit, dolor sit amet vulputate congue, lectus mi pharetra nisi, ac dignissim erat felis vitae nibh. Integer sed consectetur libero. Vestibulum eget nibh sapien. Mauris odio odio, molestie at laoreet ut, fringilla ac eros. Cras est nibh, aliquam non quam quis, lacinia semper neque. Mauris id neque neque. Maecenas arcu sem, dictum sit amet urna ac, iaculis pharetra dolor."
         },
@@ -82,7 +82,7 @@ var bio = {
         "email": "marios.sofokleous@yahoo.com",
         "github": "@PictureElement",
         "skype": "@sofokleousmarios",
-        "address": "13 Michail Christoforou, 8043 Athens, Greece",
+        "location": "Mpotasi 10, Athina 106 82, Greece",
     },
     "biopic": "./images/id.jpg"
 };
@@ -97,8 +97,8 @@ var education = {
             "major": "Computer Engineering"
         },
         {
-            "name": "University of California, Berkeley",
-            "location": "Berkeley",
+            "name": "University of Washington",
+            "location": "Washington, United States",
             "degree": "Master of Science",
             "dates": "Sept. 2017 - Sept. 2018",
             "major": "Computer Science"
@@ -286,13 +286,8 @@ education.displayOnlineCourses = function() {
 
 education.displayOnlineCourses();
 
+//******************************** MAP BUILD **********************************
 
-
-
-
-
-
-/*
 // Add an interactive Google map to the resume
 //
 // There are two more steps required to make the map work properly:
@@ -303,5 +298,7 @@ education.displayOnlineCourses();
 //
 // 2. Uncomment the <script> tag for Google Maps API in the <head> of
 // index.html.
+//
+// 3. Google is increasingly requiring an API key to make Google Map requests. // Once obtained, you can add the key to the Google Maps API script request in // index.html: 
+// <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=YOUR_API_KEY_HERE"></script>  
 $("#mapDiv").append(googleMap);
-*/

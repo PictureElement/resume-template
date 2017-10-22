@@ -36,16 +36,13 @@ var HTMLprojectImage = '<img src="%data%">';
 
 // Education
 var HTMLschoolsStart = '<div id="schools-wrapper"><h3>Formal Education</h3></div>';
-
 var HTMLschoolEntry = '<div class="school-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = ' - %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<div class="clear-float"><em>Major: %data%</em></div>';
-
 var HTMLonlineCoursesStart = '<div id="online-courses-wrapper"><h3>Online Courses</h3></div>';
-
 var HTMLonlineCourseEntry = '<div class="online-course-entry"></div>';
 var HTMLonlineCourseTitle = '<a href="#">%data%';
 var HTMLonlineCourseSchool = ' - %data%</a>';
@@ -192,8 +189,8 @@ function initializeMap() {
     // locationFinder() and fires off Google place searches for each location
     function pinPoster(locations) {
 
-        // creates a Google place search service object. PlacesService does the work of
-        // actually searching for location data.
+        // creates a Google place search service object. PlacesService does
+        // the work of actually searching for location data.
         var service = new google.maps.places.PlacesService(map);
 
         // Iterates through the array of locations, creates a search object for each location
