@@ -84,7 +84,7 @@ var bio = {
         "github": "@PictureElement",
         "skype": "@sophocleousmario",
         "messenger": "@mario.sophocleous",
-        "location": "Mpotasi 10, Athina 106 82, Greece",
+        "location": "Athens, Greece",
     },
     "biopic": "./images/id.jpg"
 };
@@ -140,46 +140,46 @@ $("#header").append(HTMLheaderStart);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
 $(".header-entry").append(formattedBioPic);
 
-// Append summary-wrapper
-$(".header-entry").append(HTMLsummaryStart);
-
 // Append welcome-message
 var formattedSummaryWelcomeMsg = HTMLsummaryWelcomeMsg.replace("%data%", bio.welcomeMessage);
-$(".summary-wrapper").append(formattedSummaryWelcomeMsg);
+$(".header-entry").append(formattedSummaryWelcomeMsg);
+
+// Append summary-list
+$(".header-entry").append(HTMLsummaryStart);
 
 // Append location
 var formattedSummaryLocation = HTMLsummaryLocation.replace("%data%", bio.contacts.location);
-$(".summary-wrapper").append(formattedSummaryLocation);
+$(".summary-list").append(formattedSummaryLocation);
 
 // Append phone
 var formattedSummaryPhone = HTMLsummaryPhone.replace("%data%", bio.contacts.phone);
-$(".summary-wrapper").append(formattedSummaryPhone);
+$(".summary-list").append(formattedSummaryPhone);
 
 // Append Email
 var formattedSummaryEmail = HTMLsummaryEmail.replace("%data%", bio.contacts.email);
-$(".summary-wrapper").append(formattedSummaryEmail);
+$(".summary-list").append(formattedSummaryEmail);
 
 // Append Website
 var formattedSummaryWebsite = HTMLsummaryWebsite.replace("%data%", bio.contacts.website);
-$(".summary-wrapper").append(formattedSummaryWebsite);
+$(".summary-list").append(formattedSummaryWebsite);
 
 // Append GitHub
 var formattedSummaryGithub = HTMLsummaryGithub.replace("%data%", bio.contacts.github);
-$(".summary-wrapper").append(formattedSummaryGithub);
+$(".summary-list").append(formattedSummaryGithub);
 
 // Append Skype
 var formattedSummarySkype = HTMLsummarySkype.replace("%data%", bio.contacts.skype);
-$(".summary-wrapper").append(formattedSummarySkype);
+$(".summary-list").append(formattedSummarySkype);
 
 // Append Messenger
 var formattedSummaryMessenger = HTMLsummaryMessenger.replace("%data%", bio.contacts.messenger);
-$(".summary-wrapper").append(formattedSummaryMessenger);
+$(".summary-list").append(formattedSummaryMessenger);
 
 // Append Sex, Birthday and Nationality
 var formattedSummaryMore = HTMLsummaryMore.replace("%data1%", bio.sex);
 var formattedSummaryMore = formattedSummaryMore.replace("%data2%", bio.birthday);
 var formattedSummaryMore = formattedSummaryMore.replace("%data3%", bio.nationality);
-$(".summary-wrapper").append(formattedSummaryMore);
+$(".summary-list").append(formattedSummaryMore);
 
 //*************************** WORK EXPERIENCE BUILD ***************************
 
@@ -312,3 +312,37 @@ education.displayOnlineCourses();
 // 3. Google is increasingly requiring an API key to make Google Map requests. // Once obtained, you can add the key to the Google Maps API script request in // index.html: 
 // <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=YOUR_API_KEY_HERE"></script>  
 $("#mapDiv").append(googleMap);
+
+//******************************* FOOTER BUILD ********************************
+
+// Append social entry row
+$("#footer").append(HTMLfooterSocialWrapper);
+// Append phone
+var formattedFooterPhone = HTMLfooterPhone.replace("%data%", bio.contacts.phone);
+$(".footer-social-wrapper:last").append(formattedFooterPhone);
+// Append email
+var formattedFooterEmail = HTMLfooterEmail.replace("%data%", bio.contacts.email);
+$(".footer-social-wrapper:last").append(formattedFooterEmail);
+
+// Append social entry row
+$("#footer").append(HTMLfooterSocialWrapper);
+// Append website
+var formattedFooterWebsite = HTMLfooterWebsite.replace("%data%", bio.contacts.website);
+$(".footer-social-wrapper:last").append(formattedFooterWebsite);
+// Append GitHub
+var formattedFooterGithub = HTMLfooterGithub.replace("%data%", bio.contacts.github);
+$(".footer-social-wrapper:last").append(formattedFooterGithub);
+
+// Append social entry row
+$("#footer").append(HTMLfooterSocialWrapper);
+// Append Skype
+var formattedFooterSkype = HTMLfooterSkype.replace("%data%", bio.contacts.skype);
+$(".footer-social-wrapper:last").append(formattedFooterSkype);
+// Append Messenger
+var formattedFooterMessenger = HTMLfooterMessenger.replace("%data%", bio.contacts.messenger);
+$(".footer-social-wrapper:last").append(formattedFooterMessenger);
+
+// Append footer row
+$("#footer").append(HTMLfooterCopyrightWrapper);
+// Append copyright
+$(".footer-copyright-wrapper").append(HTMLfooterCopyright);

@@ -1,3 +1,9 @@
+html, body {
+  height: 100%;
+  max-width: 100%;
+  font-size: 14px;
+}
+
 body,
 div,
 ul,
@@ -42,7 +48,6 @@ h4 {
 }
 
 p {
-    font-size: 14px;
     color: #333;
     line-height: 1.5;
 }
@@ -99,7 +104,8 @@ hr {
 }
 
 /* flex item */
-.summary-wrapper {
+.summary-list {
+    border: 1px solid white;
     width: 100%; /* mobile-first */
     /*border: 1px solid white;*/
     font-size: 14px;
@@ -119,13 +125,14 @@ img.biopic {
     font-weight: bold;
     font-size: 20px;
     line-height: 28px;
+    margin: 20px auto 10px auto;
 }
 
-.summary-entry {
+.summary-list li {
     color: white;
 }
 
-.summary-entry span {
+.summary-list li span {
     color: #f5ae23;
     font-weight: bold;
 }
@@ -144,9 +151,28 @@ svg {
     /*border: 5px solid blue;*/
 }
 
+/************* FOOTER *************/
+
+/* social icons */
+.social-icon {
+  color: #f5ae23;
+  vertical-align: middle;
+  font-size: 30px;
+  width: 50px;
+}
+
+.footer-copyright-wrapper {
+  background: #4a4a4a;
+  text-align: center;
+}
+
+.copyright-text {
+  color: #999;
+}
+
 /************* GENERAL *************/
 
-.work-entry, .project-entry, .school-entry, .online-course-entry {
+.work-entry, .project-entry, .school-entry, .online-course-entry, .footer-copyright-wrapper, .footer-social-wrapper {
   padding: 0 20px;
 }
 

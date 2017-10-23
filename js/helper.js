@@ -9,17 +9,17 @@
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span id="role">%data%</span><hr>';
 var HTMLheaderStart = '<div class="header-entry"></div>'
-var HTMLbioPic = '<div class="pic-wrapper"><img width="100" src="%data%" class="biopic"></div>';
-var HTMLsummaryStart = '<div class="summary-wrapper"></div>';
+var HTMLbioPic = '<div class="pic-wrapper"><img width="150" src="%data%" class="biopic"></div>';
 var HTMLsummaryWelcomeMsg = '<div class="welcome-message">%data%</div>';
-var HTMLsummaryLocation = '<div class="summary-entry"><span>Location</span> %data%</div>';
-var HTMLsummaryPhone = '<div class="summary-entry"><span>Phone</span> %data%</div>';
-var HTMLsummaryEmail = '<div class="summary-entry"><span>E-mail</span> %data%</div>';
-var HTMLsummaryWebsite = '<div class="summary-entry"><span>Website</span> %data%</div>';
-var HTMLsummaryGithub = '<div class="summary-entry"><span>GitHub</span> %data%</div>';
-var HTMLsummarySkype = '<div class="summary-entry"><span>Skype</span> %data%</div>';
-var HTMLsummaryMessenger = '<div class="summary-entry"><span>Messenger</span> %data%</div>';
-var HTMLsummaryMore = '<div class="summary-entry"><span>Sex</span> %data1% | <span>Birthday</span> %data2% | <span>Nationality</span> %data3%</div>';
+var HTMLsummaryStart = '<ul class="summary-list"></ul>';
+var HTMLsummaryLocation = '<li><span>Location</span> %data%</li>';
+var HTMLsummaryPhone = '<li><span>Phone</span> %data%</li>';
+var HTMLsummaryEmail = '<li><span>Email</span> %data%</li>';
+var HTMLsummaryWebsite = '<li><span>Website</span> %data%</li>';
+var HTMLsummaryGithub = '<li><span>GitHub</span> %data%</li>';
+var HTMLsummarySkype = '<li><span>Skype</span> %data%</li>';
+var HTMLsummaryMessenger = '<li><span>Messenger</span> %data%</li>';
+var HTMLsummaryMore = '<li><span>Sex</span> %data1% | <span>Birthday</span> %data2% | <span>Nationality</span> %data3%</li>';
 
 // Work Experience
 var HTMLworkStart = '<div class="work-entry"></div>';
@@ -52,13 +52,22 @@ var HTMLonlineCourseDates = '<div class="date-text">%data%</div>';
 var HTMLonlineCourseUrl = '<a class="clear-float" href="#">%data%</a>';
 
 // Footer
-var HTMLcontactGeneric = '<li class="flex-item"><span>%contact%</span><span>%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span>mobile</span><span>%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span>email</span><span>%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span>twitter</span><span>%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span>github</span><span>%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span>blog</span><span>%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span>location</span><span>%data%</span></li>';
+var HTMLfooterSocialWrapper = '<div class="footer-social-wrapper row"></div>';
+var HTMLfooterPhone = '<div class="c-6"><i class="social-icon fa fa-phone-square" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLfooterEmail = '<div class="c-6"><i class="social-icon fa fa-envelope" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLfooterWebsite = '<div class="c-6"><i class="social-icon fa fa-globe" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLfooterGithub = '<div class="c-6"><i class="social-icon fa fa-github" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLfooterSkype = '<div class="c-6"><i class="social-icon fa fa-skype" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLfooterMessenger = '<div class="c-6"><i class="social-icon fa fa-facebook-official" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLfooterCopyrightWrapper = '<div class="footer-copyright-wrapper row"></div>';
+var HTMLfooterCopyright = '<div class="c-12 copyright-text">&copy; 2017 Marios Sofokleous. Design and code are open source.</div>';
+
+
+
+
+
+
+
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
