@@ -38,7 +38,7 @@ h3 {
     font-style: italic;
     font-size: 20px;
     color: #000;
-    padding: 10px 20px;
+    padding: 0 20px;
 }
 
 h4 {
@@ -151,6 +151,12 @@ svg {
     /*border: 5px solid blue;*/
 }
 
+/************* EDUCATION *************/
+
+.school-entry, .online-course-entry {
+  margin-top: 10px;
+}
+
 /************* FOOTER *************/
 
 /* social icons */
@@ -177,26 +183,14 @@ svg {
 }
 
 #workExperience > div,
-#projects > div {
+#projects > div,
+#education > div {
   margin-top: 20px;
 }
 
 #workExperience > div:last-child,
-#projects > div:last-child {
-  margin-bottom: 20px;
-}
-
-#education h3 {
-  background: #4a4a4a;
-}
-
-#schools-wrapper > div,
-#online-courses-wrapper > div {
-  margin-top: 20px;
-}
-
-#schools-wrapper > div:last-child,
-#online-courses-wrapper > div:last-child {
+#projects > div:last-child,
+#education > div:last-child {
   margin-bottom: 20px;
 }
 
