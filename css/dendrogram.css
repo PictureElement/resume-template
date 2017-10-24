@@ -5,7 +5,7 @@
 }
 
 .node circle {
-    fill: lime;
+    fill: #f5a623;
 }
 
 .node text {
@@ -15,7 +15,7 @@
 }
 
 .node--internal circle {
-    fill: lime;
+    fill: #f5a623;
 }
 
 .link {
