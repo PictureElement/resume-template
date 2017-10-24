@@ -181,6 +181,9 @@ var formattedSummaryMore = formattedSummaryMore.replace("%data2%", bio.birthday)
 var formattedSummaryMore = formattedSummaryMore.replace("%data3%", bio.nationality);
 $(".summary-list").append(formattedSummaryMore);
 
+// Append internationalize button
+$(".header-entry").append(internationalizeButton);
+
 //*************************** WORK EXPERIENCE BUILD ***************************
 
 function displayWork() {
@@ -346,3 +349,4 @@ $(".footer-social-wrapper:last").append(formattedFooterMessenger);
 $("#footer").append(HTMLfooterCopyrightWrapper);
 // Append copyright
 $(".footer-copyright-wrapper").append(HTMLfooterCopyright);
+

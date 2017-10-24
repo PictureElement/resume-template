@@ -143,6 +143,11 @@ img.biopic {
     font-weight: bold;
 }
 
+.button-wrapper {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 
 /************* SKILLS *************/
 
@@ -196,7 +201,6 @@ svg {
     color: #999;
     padding: 20px;
 }
-
 
 /************* GENERAL *************/
 
