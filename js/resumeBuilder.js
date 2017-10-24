@@ -71,7 +71,7 @@ var projects = {
 
 // Bio object
 var bio = {
-    "name": "Mario Sophocleous",
+    "name": "Mario Botrini",
     "role": "Web Developer",
     "sex": "Male",
     "nationality": "Greek",
@@ -79,11 +79,11 @@ var bio = {
     "welcomeMessage": "Hi, folks. Welcome to my online resume!",
     "contacts": {
         "phone": "(+357) 96 131 844",
-        "email": "mario.sophocleous@yahoo.com",
-        "website": "mario-sophocleous.com",
-        "github": "@PictureElement",
-        "skype": "@sophocleousmario",
-        "messenger": "@mario.sophocleous",
+        "email": "mario.botrini@yahoo.com",
+        "website": "mario-botrini.com",
+        "github": "@mario.botrini",
+        "skype": "@mario.botrini",
+        "messenger": "@mario.botrini",
         "location": "Athens, Greece",
     },
     "biopic": "./images/id.jpg"
