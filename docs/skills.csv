@@ -1,0 +1,111 @@
+id,value
+Skills,
+Skills.Web development,
+Skills.Web development.Front-end,
+Skills.Web development.Front-end.HTML,
+Skills.Web development.Front-end.HTML.Validation,
+Skills.Web development.Front-end.HTML.Validation.W3C markup validation service,1
+Skills.Web development.Front-end.HTML.Semantics,
+Skills.Web development.Front-end.HTML.Semantics.N/A,2
+Skills.Web development.Front-end.CSS,
+Skills.Web development.Front-end.CSS.Validation,
+Skills.Web development.Front-end.CSS.Validation.W3C CSS validation service,3
+Skills.Web development.Front-end.CSS.Preprocessors,
+Skills.Web development.Front-end.CSS.Preprocessors.SASS*,4
+Skills.Web development.Front-end.CSS.Frameworks,
+Skills.Web development.Front-end.CSS.Frameworks.Bootstrap,5
+Skills.Web development.Front-end.CSS.Frameworks.Foundation*,6
+Skills.Web development.Front-end.JavaScript,
+Skills.Web development.Front-end.JavaScript.Task Runners,
+Skills.Web development.Front-end.JavaScript.Task Runners.GruntJS,7
+Skills.Web development.Front-end.JavaScript.Task Runners.GulpJS*,8
+Skills.Web development.Front-end.JavaScript.Libraries,
+Skills.Web development.Front-end.JavaScript.Libraries.jQuery,9
+Skills.Web development.Front-end.JavaScript.Frameworks,
+Skills.Web development.Front-end.JavaScript.Frameworks.AngularJS*,10
+Skills.Web development.Front-end.JavaScript.Frameworks.ReactJS*,11
+Skills.Web development.Front-end.Web performance & optimization,
+Skills.Web development.Front-end.Web performance & optimization.Lighthouse,12
+Skills.Web development.Front-end.Web performance & optimization.PageSpeed Insights,13
+Skills.Web development.Front-end.Multimedia tools,
+Skills.Web development.Front-end.Multimedia tools.Adobe Photoshop,14
+Skills.Web development.Front-end.Multimedia tools.Adobe Illustrator,15
+Skills.Web development.Front-end.Multimedia tools.Adobe Lightroom,16
+Skills.Web development.Front-end.Multimedia tools.Adobe Premiere Pro,17
+Skills.Web development.Front-end.Multimedia tools.GraphicsMagick,18
+Skills.Web development.Front-end.Responsive & adaptive design,
+Skills.Web development.Front-end.Responsive & adaptive design.N/A,19
+Skills.Web development.Front-end.Web authoring & dedugging,
+Skills.Web development.Front-end.Web authoring & dedugging.Chrome DevTools,20
+Skills.Web development.CMS,
+Skills.Web development.CMS.WordPress,21
+Skills.Web development.Essential,
+Skills.Web development.Essential.Git,22
+Skills.Web development.Essential.GitHub,23
+Skills.Web development.Essential.Linux CLI,24
+Skills.Web development.Essential.Sublime Text 3,25
+Skills.Programming,
+Skills.Programming.C/C++,
+Skills.Programming.C/C++.IDEs,
+Skills.Programming.C/C++.IDEs.Eclipse,26
+Skills.Programming.C/C++.IDEs.Code::Blocks,27
+Skills.Programming.C/C++.IDEs.Geany,28
+Skills.Programming.C/C++.Debugging,
+Skills.Programming.C/C++.Debugging.Valgrind,29
+Skills.Programming.C/C++.Libraries,
+Skills.Programming.C/C++.Libraries.PAPI,30
+Skills.Programming.C/C++.Libraries.OpenMP,31
+Skills.Programming.C/C++.Libraries.MPICH,32
+Skills.Programming.C/C++.Libraries.Blitz++,33
+Skills.Programming.C/C++.Libraries.Eigen,34
+Skills.Programming.R,
+Skills.Programming.R.N/A,35
+Skills.Programming.Bash,
+Skills.Programming.Bash.N/A,36
+Skills.Programming.MIPS assembly,
+Skills.Programming.MIPS assembly.N/A,37
+Skills.Computer security,
+Skills.Computer security.Anonymity,
+Skills.Computer security.Anonymity.VPN,38
+Skills.Computer security.Anonymity.Tor,39
+Skills.Computer security.Anonymity.ProxyChains,40
+Skills.Computer security.Footprinting,
+Skills.Computer security.Footprinting.Nmap,
+Skills.Computer security.Footprinting.Nmap.NSE,41
+Skills.Computer security.Wireless network attacks,
+Skills.Computer security.Wireless network attacks.Aircrack-ng suite,42
+Skills.Computer security.Wireless network attacks.Reaver,43
+Skills.Computer security.MitM attacks,
+Skills.Computer security.MitM attacks.Burp suite,44
+Skills.Computer security.MitM attacks.Squid caching proxy,45
+Skills.Computer security.MitM attacks.Evil twin & Rogue AP,46
+Skills.Computer security.Vulnerability exploitation,
+Skills.Computer security.Vulnerability exploitation.NSE,47
+Skills.Computer security.Vulnerability exploitation.Metasploit,48
+Skills.Computer security.Penetration testing,
+Skills.Computer security.Penetration testing.Kali Linux,49
+Skills.Computer security.Penetration testing.Metasploitable,50
+Skills.Computer security.DNS spoofing,
+Skills.Computer security.DNS spoofing.Social Engineer Toolkit (SET),51
+Skills.Computer security.DNS spoofing.DNSChef DNS proxy,52
+Skills.Computer security.Offline/Online password cracking,
+Skills.Computer security.Offline/Online password cracking.John the Ripper,53
+Skills.Computer security.Offline/Online password cracking.THC-Hydra,54
+Skills.Computer security.Signal jamming & DoS attacks,
+Skills.Computer security.Signal jamming & DoS attacks.Aircrack-ng suite,55
+Skills.Computer security.Signal jamming & DoS attacks.SYN flooding,56
+Skills.Computer security.Signal jamming & DoS attacks.Slow HTTP attack (Slowloris),57
+Skills.Computer security.Keyloggers,
+Skills.Computer security.Keyloggers.N/A,58
+Skills.Computer security.Reverse shells,
+Skills.Computer security.Reverse shells.Metasploit,59
+Skills.Computer security.Reverse shells.Netcat,60
+Skills.Computer security.Reverse shells.NSE,61
+Skills.Other,
+Skills.Other.Gnuplot,62
+Skills.Other.GNU Octave,63
+Skills.Other.Magic VLSI,64
+Skills.Other.Word processor,65
+Skills.Other.Spread sheet,66
+Skills.Other.Presentation software,67
+Skills.Other.Google Drive,68
