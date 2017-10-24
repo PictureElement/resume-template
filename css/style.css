@@ -63,7 +63,13 @@ img {
 }
 
 hr {
-  margin: 20px 0;
+  margin: 20px;
+  border: 0; 
+  height: 1px; 
+  /* Chrome, Safari */
+  background: -webkit-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b);
+  /* Firefox */
+  background: -moz-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b);
 }
 
 #name {
