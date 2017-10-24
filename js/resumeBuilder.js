@@ -184,6 +184,30 @@ $(".summary-list").append(formattedSummaryMore);
 // Append internationalize button
 $(".header-entry").append(internationalizeButton);
 
+// The function replaces the original name stored in the "bio" object with an
+// international version. The function then replaces the content of #name with
+// the new formatted name
+function inName() {
+    // Extract and capitalize first character (first name)
+    var char = bio.name.slice(0, 1);
+    //console.log(char);
+    char = char.toUpperCase();
+    //console.log(char);
+    // Full name (array)
+    var fullName = bio.name.split(" ");
+    // First name to lower case
+    fullName[0] = fullName[0].toLowerCase();
+    // Last name to upper case
+    fullName[1] = fullName[1].toUpperCase();
+    // Format first name accordingly
+    fullName[0] = char + fullName[0].slice(1);
+    // Change value stored in the bio object 
+    bio.name = fullName[0] + " " + fullName[1];
+    // jQuerry's replaceWith() method that replaces the content of the
+    // selected element(s).
+    $("#name").replaceWith("<h1>" + bio.name + "</h1>");
+}
+
 //*************************** WORK EXPERIENCE BUILD ***************************
 
 function displayWork() {
@@ -349,4 +373,3 @@ $(".footer-social-wrapper:last").append(formattedFooterMessenger);
 $("#footer").append(HTMLfooterCopyrightWrapper);
 // Append copyright
 $(".footer-copyright-wrapper").append(HTMLfooterCopyright);
-

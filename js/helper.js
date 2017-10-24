@@ -20,6 +20,7 @@ var HTMLsummaryGithub = '<li><span>GitHub</span> %data%</li>';
 var HTMLsummarySkype = '<li><span>Skype</span> %data%</li>';
 var HTMLsummaryMessenger = '<li><span>Messenger</span> %data%</li>';
 var HTMLsummaryMore = '<li><span>Sex</span> %data1% | <span>Birthday</span> %data2% | <span>Nationality</span> %data3%</li>';
+var internationalizeButton = '<div class="button-wrapper"><button>Internationalize</button></div>';
 
 // Work Experience
 var HTMLworkStart = '<div class="work-entry"></div>';
@@ -51,6 +52,9 @@ var HTMLonlineCourseSchool = ' - %data%</a>';
 var HTMLonlineCourseDates = '<div class="date-text">%data%</div>';
 var HTMLonlineCourseUrl = '<a class="clear-float" href="#">%data%</a>';
 
+// Map
+var googleMap = '<div id="map"></div>';
+
 // Footer
 var HTMLfooterSocialWrapper = '<div class="footer-social-wrapper row"></div>';
 var HTMLfooterPhone = '<div class="c-6"><i class="social-icon fa fa-phone-square" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
@@ -62,12 +66,8 @@ var HTMLfooterMessenger = '<div class="c-6"><i class="social-icon fa fa-facebook
 var HTMLfooterCopyrightWrapper = '<div class="footer-copyright-wrapper row"></div>';
 var HTMLfooterCopyright = '<div class="c-12 copyright-text">&copy; 2017 Marios Sofokleous. Design and code are open source.</div>';
 
-var internationalizeButton = '<div class="button-wrapper"><button>Internationalize</button></div>';
-var googleMap = '<div id="map"></div>';
-
-/*
-The Internationalize Names challenge found in the lesson Flow Control from JavaScript Basics requires you to create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
-*/
+// This helper function hooks up inName() function (located in
+// resumeBuilder.js) to the button you'll be appending.
 $(document).ready(function() {
     $('button').click(function() {
         var $name = $('#name');
@@ -99,7 +99,6 @@ See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
 var map; // declares a global map variable
-
 
 /*
 Start here! initializeMap() is called when page is loaded.
