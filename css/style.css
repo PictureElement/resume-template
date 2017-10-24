@@ -122,6 +122,7 @@ img.biopic {
     height: auto;
     vertical-align: middle;
     margin: 0;
+    box-shadow: 0 2px 2px 1px #202020;
 }
 
 .welcome-message {
@@ -147,7 +148,7 @@ img.biopic {
 
 .svg-wrapper {
     width: 100%;
-    background: gray;
+    /*background: gray;*/
 }
 
 svg {
