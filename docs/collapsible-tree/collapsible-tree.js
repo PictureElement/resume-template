@@ -18,7 +18,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("https://github.com/PictureElement/resume-template-html5/blob/master/collapsible-tree/serve/skills.json", function(error, skills) {
+d3.json("https://raw.githubusercontent.com/PictureElement/resume-template-html5/master/collapsible-tree/serve/skills.json", function(error, skills) {
   if (error) throw error;
 
   root = skills;
