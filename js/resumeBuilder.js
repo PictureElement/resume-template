@@ -58,13 +58,13 @@ var projects = {
             "title": "Project #1",
             "dates": "Nov. 2016 - Mar. 2017",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis porttitor quam. Sed non lacus vitae lacus dapibus auctor. Nullam scelerisque quam lacus, eu aliquet nulla cursus non. Praesent venenatis diam sit amet est eleifend vehicula. Praesent pulvinar neque eu bibendum volutpat. Nunc mattis libero felis, at consectetur mauris porttitor vel. Integer mattis ante id augue semper tempor. Cras turpis nisl, maximus sed lacinia quis, eleifend eget sem. Fusce volutpat enim vitae turpis mattis, faucibus scelerisque tellus posuere. Cras maximus vitae lorem at finibus.",
-            "images": ["http://via.placeholder.com/200x100", "http://via.placeholder.com/200x100"]
+            "images": ["https://via.placeholder.com/200x100", "https://via.placeholder.com/200x100"]
         },
         {
             "title": "Project #2",
             "dates": "Feb. 2016 - Present",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis porttitor quam. Sed non lacus vitae lacus dapibus auctor. Nullam scelerisque quam lacus, eu aliquet nulla cursus non. Praesent venenatis diam sit amet est eleifend vehicula. Praesent pulvinar neque eu bibendum volutpat. Nunc mattis libero felis, at consectetur mauris porttitor vel. Integer mattis ante id augue semper tempor. Cras turpis nisl, maximus sed lacinia quis, eleifend eget sem. Fusce volutpat enim vitae turpis mattis, faucibus scelerisque tellus posuere. Cras maximus vitae lorem at finibus.",
-            "images": ["http://via.placeholder.com/200x100", "http://via.placeholder.com/200x100"]
+            "images": ["https://via.placeholder.com/200x100", "https://via.placeholder.com/200x100"]
         }
     ]
 }
@@ -337,7 +337,7 @@ education.displayOnlineCourses();
 // index.html.
 //
 // 3. Google is increasingly requiring an API key to make Google Map requests. // Once obtained, you can add the key to the Google Maps API script request in // index.html: 
-// <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=YOUR_API_KEY_HERE"></script>  
+// <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=YOUR_API_KEY_HERE"></script>  
 $("#mapDiv").append(googleMap);
 
 //******************************* FOOTER BUILD ********************************
