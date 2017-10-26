@@ -22,7 +22,7 @@ var stratify = d3.stratify()
 // In order to use local files, you need to start a simple server (e.g.
 // http-server) on your computer.
 // Also be sure to enable CORS to have access to the file.
-d3.csv("../skills.csv", function(error, data) {
+d3.csv("https://raw.githubusercontent.com/PictureElement/resume-template-html5/master/serve/skills.csv", function(error, data) {
   if (error) throw error;
 
   var root = stratify(data)
