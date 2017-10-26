@@ -1,15 +1,17 @@
 .node {
   cursor: pointer;
+  fill: #333;
 }
 
 .node circle {
   fill: #fff;
-  stroke: steelblue;
+  stroke: #f5ae23;
   stroke-width: 1.5px;
 }
 
 .node text {
-  font: 10px sans-serif;
+  font-family: 'Lobster', cursive;
+  font-size: 10px;
 }
 
 .link {
@@ -17,4 +19,3 @@
   stroke: #ccc;
   stroke-width: 1.5px;
 }
-
