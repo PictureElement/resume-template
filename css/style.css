@@ -156,19 +156,10 @@ img.biopic {
 
 
 /************* SKILLS *************/
-
-.svg-wrapper {
+iframe {
     width: 100%;
-    /*background: gray;*/
+    border: solid 5px red;
 }
-
-svg {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    /*border: 5px solid blue;*/
-}
-
 
 
 /************* EDUCATION *************/
@@ -226,6 +217,10 @@ svg {
 
 
 /************* GENERAL *************/
+
+main {
+    width: 100%;
+}
 
 .work-entry,
 .project-entry,

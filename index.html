@@ -14,8 +14,6 @@
         <link href="css/reset.css" rel="stylesheet">
         <!-- Page styles -->
         <link href="css/style.css" rel="stylesheet">
-        <!-- Dendrogram -->
-        <link href="css/dendrogram.css" rel="stylesheet">
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -30,10 +28,7 @@
         <main id="main">
             <section id="skills">
                 <h2>Skills</h2>
-                <div class="svg-wrapper">
-                    <!-- Embed dendrogram -->
-                    <svg width="768" height="900" preserveAspectRatio="none" viewBox="0 0 768 900"></svg>
-                </div>
+                <iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="collapsible-tree/index.html" marginwidth="0" marginheight="0" style="height: 800px;" scrolling="no"></iframe>
             </section>
             <section id="workExperience">
                 <h2>Work Experience</h2>
@@ -64,9 +59,6 @@
         In resumeBuilder.js, you'll be writing code that builds the resume dynamically when this website, index.html, is opened.
         -->
         <script src="js/resumeBuilder.js"></script>
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-        <!-- Dendrogram generation -->
-        <script src="js/dendrogram.js"></script>
     </body>
 
 </html>
