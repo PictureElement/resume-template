@@ -1,0 +1,141 @@
+{
+  "name": "Skills",
+  "children": [{
+    "name": "Web development",
+    "children": [{
+      "name": "Front-end",
+      "children": [{
+          "name": "Multimedia tools",
+          "children": [{
+              "name": "Adobe Photoshop",
+              "size": 1
+            },
+            {
+              "name": "Adobe Illustrator",
+              "size": 2
+            },
+            {
+              "name": "Adobe Lightroom",
+              "size": 3
+            },
+            {
+              "name": "Adobe Premiere Pro",
+              "size": 4
+            },
+            {
+              "name": "GraphicsMagick",
+              "size": 5
+            }
+          ]
+        },
+        {
+          "name": "AWD",
+          "size": 6
+        },
+        {
+          "name": "RWD",
+          "size": 7
+        },
+        {
+          "name": "Web authoring & debugging",
+          "children": [{
+            "name": "Chrome DevTools",
+            "size": 8
+          }]
+        },
+        {
+          "name": "Web perf. & opt.",
+          "children": [{
+              "name": "Lighthouse",
+              "size": 9
+            },
+            {
+              "name": "PageSpeed Insights",
+              "size": 10
+            }
+          ]
+        },
+        {
+          "name": "CSS",
+          "children": [{
+              "name": "Frameworks",
+              "children": [{
+                  "name": "Bootstrap",
+                  "size": 11
+                },
+                {
+                  "name": "Foundation*",
+                  "size": 12
+                }
+              ]
+            },
+            {
+              "name": "Validation",
+              "children": [{
+                "name": "W3C CSS val. svc.",
+                "size": 13
+              }]
+            },
+            {
+              "name": "Preprocessors",
+              "children": [{
+                "name": "SASS*",
+                "size": 14
+              }]
+            }
+          ]
+        },
+        {
+          "name": "HTML",
+          "children": [{
+              "name": "Validation",
+              "children": [{
+                "name": "W3C markup val. svc.",
+                "size": 15
+              }]
+            },
+            {
+              "name": "Semantics",
+              "size": 16
+            }
+          ]
+        },
+        {
+          "name": "JavaScript",
+          "children": [{
+              "name": "Task Runners",
+              "children": [{
+                  "name": "GruntJS",
+                  "size": 17
+                },
+                {
+                  "name": "GulpJS*",
+                  "size": 18
+                }
+              ]
+            },
+            {
+              "name": "Libraries",
+              "children": [{
+                "name": "jQuerry",
+                "size": 19
+              }]
+            },
+            {
+              "name": "Frameworks",
+              "children": [{
+                  "name": "AngularJS*",
+                  "size": 20
+                },
+                {
+                  "name": "ReactJS*",
+                  "size": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }]
+  }]
+}
