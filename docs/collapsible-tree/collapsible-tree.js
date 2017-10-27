@@ -13,8 +13,8 @@ var diagonal = d3.svg.diagonal()
     .projection(function(d) { return [d.y, d.x]; });
 
 var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.right + margin.left)
-    .attr("height", height + margin.top + margin.bottom)
+  .attr("viewBox", "0 0 960 800")
+  .attr("preserveAspectRatio", "xMidYMid meet")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -75,7 +75,7 @@ function update(source) {
       .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeUpdate.select("circle")
-      .attr("r", 4.5)
+      .attr("r", 8)
       .style("fill", function(d) { return d._children ? "#f5ae23" : "#fff"; });
 
   nodeUpdate.select("text")
