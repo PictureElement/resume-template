@@ -29,25 +29,29 @@
           ]
         },
         {
-          "name": "Responsive & adaptive design",
+          "name": "AWD",
           "size": 6
+        },
+        {
+          "name": "RWD",
+          "size": 7
         },
         {
           "name": "Web authoring & debugging",
           "children": [{
             "name": "Chrome DevTools",
-            "size": 7
+            "size": 8
           }]
         },
         {
-          "name": "Web performance & optimization",
+          "name": "Web perf. & opt.",
           "children": [{
               "name": "Lighthouse",
-              "size": 8
+              "size": 9
             },
             {
               "name": "PageSpeed Insights",
-              "size": 9
+              "size": 10
             }
           ]
         },
@@ -57,26 +61,26 @@
               "name": "Frameworks",
               "children": [{
                   "name": "Bootstrap",
-                  "size": 10
+                  "size": 11
                 },
                 {
                   "name": "Foundation*",
-                  "size": 11
+                  "size": 12
                 }
               ]
             },
             {
               "name": "Validation",
               "children": [{
-                "name": "W3C CSS validation service",
-                "size": 12
+                "name": "W3C CSS val. svc.",
+                "size": 13
               }]
             },
             {
               "name": "Preprocessors",
               "children": [{
                 "name": "SASS*",
-                "size": 13
+                "size": 14
               }]
             }
           ]
@@ -86,13 +90,13 @@
           "children": [{
               "name": "Validation",
               "children": [{
-                "name": "W3C CSS validation service",
-                "size": 14
+                "name": "W3C markup val. svc.",
+                "size": 15
               }]
             },
             {
               "name": "Semantics",
-              "size": 15
+              "size": 16
             }
           ]
         },
@@ -102,11 +106,11 @@
               "name": "Task Runners",
               "children": [{
                   "name": "GruntJS",
-                  "size": 16
+                  "size": 17
                 },
                 {
                   "name": "GulpJS*",
-                  "size": 17
+                  "size": 18
                 }
               ]
             },
@@ -114,18 +118,18 @@
               "name": "Libraries",
               "children": [{
                 "name": "jQuerry",
-                "size": 18
+                "size": 19
               }]
             },
             {
               "name": "Frameworks",
               "children": [{
                   "name": "AngularJS*",
-                  "size": 19
+                  "size": 20
                 },
                 {
                   "name": "ReactJS*",
-                  "size": 20
+                  "size": 21
                 }
               ]
             }

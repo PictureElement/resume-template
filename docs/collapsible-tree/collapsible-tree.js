@@ -75,7 +75,7 @@ function update(source) {
       .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeUpdate.select("circle")
-      .attr("r", 20)
+      .attr("r", 4.5)
       .style("fill", function(d) { return d._children ? "#f5ae23" : "#fff"; });
 
   nodeUpdate.select("text")
