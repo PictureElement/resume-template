@@ -143,12 +143,12 @@ $("#header").append(HTMLheaderStart2);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
 $(".header-entry-2").append(formattedBioPic);
 
-// Append welcome-message
-var formattedSummaryWelcomeMsg = HTMLsummaryWelcomeMsg.replace("%data%", bio.welcomeMessage);
-$(".header-entry-2").append(formattedSummaryWelcomeMsg);
-
 // Append summary-list
 $(".header-entry-2").append(HTMLsummaryStart);
+
+// Append welcome-message
+var formattedSummaryWelcomeMsg = HTMLsummaryWelcomeMsg.replace("%data%", bio.welcomeMessage);
+$(".summary-list").append(formattedSummaryWelcomeMsg);
 
 // Append location
 var formattedSummaryLocation = HTMLsummaryLocation.replace("%data%", bio.contacts.location);

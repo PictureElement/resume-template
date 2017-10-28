@@ -72,6 +72,8 @@ img {
 .header-entry-1 {
     padding: 20px;
     background: #4a4a4a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    border-bottom: 2px solid #f5ae23;
 }
 
 /* flex container */
@@ -88,7 +90,7 @@ img {
 /* flex item */
 .pic-wrapper {
     width: 100%; /* mobile-first */
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     padding: 0;
     margin: 0;
 }
@@ -96,7 +98,7 @@ img {
 /* flex item */
 .welcome-message {
     width: 100%; /* mobile-first */
-    border: 1px solid white;
+    /*border: 1px solid white;*/
 }
 
 /* flex item */
@@ -106,13 +108,13 @@ img {
     /*border: 1px solid white;*/
     font-size: 14px;
     line-height: 1.5;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
 }
 
 /* flex item */
 .button-wrapper {
     width: 100%;     
-    border: 1px solid white;
+    /*border: 1px solid white;*/
 }
 
 img.biopic {
@@ -121,7 +123,8 @@ img.biopic {
     height: auto;
     vertical-align: middle;
     margin: 0;
-    box-shadow: 0 1px 2px 1px #202020;
+    border: 2px solid #f5ae23;
+    box-shadow: 0 1px 2px 1px #444;
 }
 
 .welcome-message {
@@ -270,16 +273,17 @@ An element that has the clear property set on it will not move up adjacent to th
         float: left;
     }
     .pic-wrapper {
-        width: 30%;
+        width: 25%;
         order: 2;
     }
     .welcome-message {
         width: 100%;
         order: 1;
         margin-top: 0;
+        text-align: left;
     }
     .summary-list {
-        width: 70%;
+        width: 75%;
         order: 3;
         text-align: left;
     }
@@ -295,4 +299,3 @@ An element that has the clear property set on it will not move up adjacent to th
         margin: 0 auto;
     } 
 }
-
