@@ -123,29 +123,32 @@ var education = {
 
 //******************************* HEADER BUILD ********************************
 
+// Append header-entry-1
+$("#header").append(HTMLheaderStart1);
+
 // Append name
 // JS replace() method
 var formattedHeaderName = HTMLheaderName.replace("%data%", bio.name);
 // jQuerry's append() method
-$("#header").append(formattedHeaderName);
+$(".header-entry-1").append(formattedHeaderName);
 
 // Append role
 var formattedHeaderRole = HTMLheaderRole.replace("%data%", bio.role);
-$("#header").append(formattedHeaderRole);
+$(".header-entry-1").append(formattedHeaderRole);
 
-// Append header-entry
-$("#header").append(HTMLheaderStart);
+// Append header-entry-2
+$("#header").append(HTMLheaderStart2);
 
 // Append pic-wrapper
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
-$(".header-entry").append(formattedBioPic);
+$(".header-entry-2").append(formattedBioPic);
 
 // Append welcome-message
 var formattedSummaryWelcomeMsg = HTMLsummaryWelcomeMsg.replace("%data%", bio.welcomeMessage);
-$(".header-entry").append(formattedSummaryWelcomeMsg);
+$(".header-entry-2").append(formattedSummaryWelcomeMsg);
 
 // Append summary-list
-$(".header-entry").append(HTMLsummaryStart);
+$(".header-entry-2").append(HTMLsummaryStart);
 
 // Append location
 var formattedSummaryLocation = HTMLsummaryLocation.replace("%data%", bio.contacts.location);
@@ -182,7 +185,7 @@ var formattedSummaryMore = formattedSummaryMore.replace("%data3%", bio.nationali
 $(".summary-list").append(formattedSummaryMore);
 
 // Append internationalize button
-$(".header-entry").append(internationalizeButton);
+$(".header-entry-2").append(internationalizeButton);
 
 // The function replaces the original name stored in the "bio" object with an
 // international version. The function then replaces the content of #name with

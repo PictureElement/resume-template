@@ -6,9 +6,10 @@
 // functions to replace the %data% placeholder text you see in them.
 
 // Header
+var HTMLheaderStart1 = '<div class="header-entry-1"></div>';
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span id="role">%data%</span><hr>';
-var HTMLheaderStart = '<div class="header-entry"></div>'
+var HTMLheaderRole = '<span id="role">%data%</span>';
+var HTMLheaderStart2 = '<div class="header-entry-2"></div>';
 var HTMLbioPic = '<div class="pic-wrapper"><img width="150" src="%data%" class="biopic"></div>';
 var HTMLsummaryWelcomeMsg = '<div class="welcome-message">%data%</div>';
 var HTMLsummaryStart = '<ul class="summary-list"></ul>';

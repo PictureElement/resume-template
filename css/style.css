@@ -52,27 +52,11 @@ img {
     margin: 10px 10px 0 0;
 }
 
-
-
-
 /************* HEADER *************/
 
 #header {
-    background: #4a4a4a;
     text-align: center;
-    width: 100%;
-    /* mobile-first */
-    padding: 20px 0;
-}
-
-hr {
-    margin: 20px;
-    border: 0;
-    height: 1px;
-    /* Chrome, Safari */
-    background: -webkit-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b);
-    /* Firefox */
-    background: -moz-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b);
+    width: 100%; /* mobile-first */
 }
 
 #name {
@@ -81,48 +65,54 @@ hr {
 
 #role {
     display: block;
-    /* mobile-first */
-    color: black;
+    color: white;
     font-weight: 100;
 }
 
-
-
-
-/* flex container */
-
-.header-entry {
-    display: flex;
-    flex-wrap: wrap;
-    /*border: 1px solid white;*/
+.header-entry-1 {
+    padding: 20px;
+    background: #4a4a4a;
 }
 
-
-
+/* flex container */
+.header-entry-2 {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* Align items vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+    background: gray;
+}
 
 /* flex item */
-
 .pic-wrapper {
-    width: 100%;
-    /* mobile-first */
-    /*border: 1px solid white;*/
-    text-align: center;
+    width: 100%; /* mobile-first */
+    border: 1px solid white;
     padding: 0;
     margin: 0;
 }
 
-
-
+/* flex item */
+.welcome-message {
+    width: 100%; /* mobile-first */
+    border: 1px solid white;
+}
 
 /* flex item */
-
 .summary-list {
     /*border: 1px solid white;*/
-    width: 100%;
-    /* mobile-first */
+    width: 100%; /* mobile-first */
     /*border: 1px solid white;*/
     font-size: 14px;
     line-height: 1.5;
+    border: 1px solid white;
+}
+
+/* flex item */
+.button-wrapper {
+    width: 100%;     
+    border: 1px solid white;
 }
 
 img.biopic {
@@ -131,7 +121,7 @@ img.biopic {
     height: auto;
     vertical-align: middle;
     margin: 0;
-    box-shadow: 0 2px 2px 1px #202020;
+    box-shadow: 0 1px 2px 1px #202020;
 }
 
 .welcome-message {
@@ -157,14 +147,9 @@ img.biopic {
     margin-top: 20px;
 }
 
-
-
-
 /************* SKILLS *************/
 
-
 /* Making Embedded Content Work In A Responsive iFrame */
-
 .graph-wrapper {
     position: relative;
     /* The height will be 83.3333% of the width (960px x 800px) */
@@ -174,9 +159,7 @@ img.biopic {
     overflow: hidden;
 }
 
-
 /* Making Embedded Content Work In A Responsive iFrame */
-
 .graph-wrapper iframe {
     position: absolute;
     top: 0;
@@ -186,8 +169,6 @@ img.biopic {
     border: none;
 }
 
-
-
 /************* EDUCATION *************/
 
 .school-entry,
@@ -195,10 +176,7 @@ img.biopic {
     margin-top: 10px;
 }
 
-
-
 /************* MAP *************/
-
 #map {
     display: block;
     height: 337px;
@@ -211,13 +189,9 @@ img.biopic {
     /*border: 5px solid green;*/
 }
 
-
-
 /************* FOOTER *************/
 
-
 /* social icons */
-
 .social-icon {
     color: #f5ae23;
     vertical-align: middle;
@@ -243,12 +217,11 @@ img.biopic {
     padding: 20px;
 }
 
-
-
 /************* GENERAL *************/
 
 main {
     width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
 .work-entry,
@@ -280,19 +253,12 @@ main {
     line-height: 16px;
 }
 
-
-
-
 /* 
 An element that has the clear property set on it will not move up adjacent to the float like the float desires, but will move itself down past the float.
 */
-
 .clear-float {
     clear: both;
 }
-
-
-
 
 /************* MEDIA QUERIES *************/
 
@@ -303,74 +269,30 @@ An element that has the clear property set on it will not move up adjacent to th
     .date-text {
         float: left;
     }
+    .pic-wrapper {
+        width: 30%;
+        order: 2;
+    }
+    .welcome-message {
+        width: 100%;
+        order: 1;
+        margin-top: 0;
+    }
+    .summary-list {
+        width: 70%;
+        order: 3;
+        text-align: left;
+    }
+    .button-wrapper {
+        width: 100%;
+        order: 4;
+    }
 }
 
-
-
-
-/*
-.orange {
-  background-color: #f5ae23;
+@media only screen and (min-width: 960px) {
+    main, .header-entry-2 {
+        width: 960px;
+        margin: 0 auto;
+    } 
 }
 
-.white-text {
-  font-weight: bold;
-  color: #fff;
-}
-
-.gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear: both;
-}
-
-.dark-gray {
-  background-color: #4a4a4a;
-}
-
-/* Media queries to handle various device widths */
-
-
-/*
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
-}
-
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
-}
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
-
-@media only screen and (min-width: 750px) {
-  .biopic {
-    display: block;
-  }
-}
-*/
