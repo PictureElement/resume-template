@@ -199,7 +199,7 @@ function initializeMap() {
             "featureType": "water",
             "elementType": "all",
             "stylers": [{
-                "color": "#6d7993"
+                "color": "#d5d5d5"
             }, {
                 "visibility": "on"
             }]
@@ -260,10 +260,15 @@ function initializeMap() {
         var bounds = window.mapBounds; // current boundaries of the map window
 
         // marker is an object with additional data about the pin for a single location
+
+        /* Custom marker image */
+        var image = './images/flag-map-marker.png';
+
         var marker = new google.maps.Marker({
             map: map,
             position: placeData.geometry.location,
-            title: name
+            title: name,
+            icon: image
         });
 
         // infoWindows are the little helper windows that open when you click
