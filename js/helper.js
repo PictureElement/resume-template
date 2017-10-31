@@ -79,9 +79,21 @@ $(document).ready(function() {
     });
 });
 
-/*
-The next few lines about clicks are for the Collecting Click Locations quiz in the lesson Flow Control from JavaScript Basics.
-*/
+// $(document).click() is a jQuery method (event handler).
+//
+// "document" refers to the entire web page (DOM).
+//
+// The anonymous function that gets passed into .click() method runs every
+// time a user clicks on the page.
+//
+// "loc" is a jQuery event object that contains information about the
+// click event.
+//
+// loc is passed as a parameter to the anonymous function that gets invoked
+// whenever the click event is triggered. The anonymous function itself
+// invokes a named function (logClicks) to achieve its goal.
+//
+// Anything that uses an anonymous function could also use a named function.
 var clickLocations = [];
 
 function logClicks(x, y) {
@@ -93,7 +105,8 @@ function logClicks(x, y) {
 }
 
 $(document).click(function(loc) {
-    // your code goes here!
+    // Function invocation
+    logClicks(loc.pageX, loc.pageY);
 });
 
 /*
@@ -182,6 +195,7 @@ function initializeMap() {
         // hmmmm, I wonder what this is about...
         google.maps.event.addListener(marker, 'click', function() {
             // your code goes here!
+            infoWindow.open(map, marker);
         });
 
         // this is where the pin actually gets added to the map.
