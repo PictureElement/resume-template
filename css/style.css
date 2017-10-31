@@ -201,16 +201,16 @@ img.biopic {
 }
 
 /************* MAP *************/
+
 #map {
     display: block;
-    height: 337px;
-    /*border: 5px solid red;*/
+    height: 100%;
 }
 
 #mapDiv {
     height: 400px;
     width: 100%;
-    /*border: 5px solid green;*/
+    overflow: hidden;
 }
 
 /************* LET'S CONNECT *************/

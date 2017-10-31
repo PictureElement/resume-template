@@ -124,7 +124,89 @@ function initializeMap() {
     var locations;
 
     var mapOptions = {
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        styles: [{
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#000000"
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#444444"
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "labels.icon",
+            "stylers": [{
+                "hue": "#ff0000"
+            }]
+        }, {
+            "featureType": "administrative.province",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#f2f2f2"
+            }]
+        }, {
+            "featureType": "landscape.man_made",
+            "elementType": "labels",
+            "stylers": [{
+                "saturation": "36"
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [{
+                "saturation": -100
+            }, {
+                "lightness": 45
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "simplified"
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#6d7993"
+            }, {
+                "visibility": "on"
+            }]
+        }]
+
+
+
     };
 
     /*
@@ -132,7 +214,6 @@ function initializeMap() {
     appended to #mapDiv in resumeBuilder.js.
     */
     map = new google.maps.Map(document.querySelector('#map'), mapOptions);
-
 
     /*
     locationFinder() returns an array of every location string from the JSONs
