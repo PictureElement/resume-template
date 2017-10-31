@@ -39,9 +39,16 @@ p {
 
 a {
     color: #1199c3;
-    text-decoration: none;
+    text-decoration: underline;
     /*margin-top: 10px;*/
     display: block;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 ul {
@@ -114,7 +121,7 @@ img {
 
 /* flex item */
 .button-wrapper {
-    width: 100%;     
+    width: 100%;   
     /*border: 1px solid white;*/
 }
 
@@ -212,6 +219,11 @@ img.biopic {
     padding-left: 20px;
 }
 
+.social-row-entry {
+    padding-left: 0;
+    margin-left: 0;
+}
+
 #lets-connect>div:nth-child(4) {
     padding-bottom: 10px;
     padding-left: 20px;
@@ -226,6 +238,11 @@ footer {
 }
 
 .copyright-text {
+    color: #999;
+}
+
+footer a {
+    display: inline;
     color: #999;
 }
 

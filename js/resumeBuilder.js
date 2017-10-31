@@ -346,34 +346,34 @@ $("#mapDiv").append(googleMap);
 //**************************** LET'S CONNECT BUILD ****************************
 
 // Append social entry row
-$("#lets-connect").append(HTMLletsConnectSocialWrapper);
+$("#lets-connect").append(HTMLletsConnectSocialRow);
 
 // Append phone
 var formattedLetsConnectPhone = HTMLletsConnectPhone.replace("%data%", bio.contacts.phone);
-$(".lets-connect-social-wrapper:last").append(formattedLetsConnectPhone);
+$(".lets-connect-social-row:last").append(formattedLetsConnectPhone);
 // Append email
 var formattedLetsConnectEmail = HTMLletsConnectEmail.replace("%data%", bio.contacts.email);
-$(".lets-connect-social-wrapper:last").append(formattedLetsConnectEmail);
+$(".lets-connect-social-row:last").append(formattedLetsConnectEmail);
 
 // Append social entry row
-$("#lets-connect").append(HTMLletsConnectSocialWrapper);
+$("#lets-connect").append(HTMLletsConnectSocialRow);
 
 // Append website
 var formattedLetsConnectWebsite = HTMLletsConnectWebsite.replace("%data%", bio.contacts.website);
-$(".lets-connect-social-wrapper:last").append(formattedLetsConnectWebsite);
+$(".lets-connect-social-row:last").append(formattedLetsConnectWebsite);
 // Append GitHub
 var formattedLetsConnectGithub = HTMLletsConnectGithub.replace("%data%", bio.contacts.github);
-$(".lets-connect-social-wrapper:last").append(formattedLetsConnectGithub);
+$(".lets-connect-social-row:last").append(formattedLetsConnectGithub);
 
 // Append social entry row
-$("#lets-connect").append(HTMLletsConnectSocialWrapper);
+$("#lets-connect").append(HTMLletsConnectSocialRow);
 
 // Append Skype
 var formattedLetsConnectSkype = HTMLletsConnectSkype.replace("%data%", bio.contacts.skype);
-$(".lets-connect-social-wrapper:last").append(formattedLetsConnectSkype);
+$(".lets-connect-social-row:last").append(formattedLetsConnectSkype);
 // Append Messenger
 var formattedLetsConnectMessenger = HTMLletsConnectMessenger.replace("%data%", bio.contacts.messenger);
-$(".lets-connect-social-wrapper:last").append(formattedLetsConnectMessenger);
+$(".lets-connect-social-row:last").append(formattedLetsConnectMessenger);
 
 //******************************* FOOTER BUILD ********************************
 

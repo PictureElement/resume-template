@@ -57,17 +57,17 @@ var HTMLonlineCourseUrl = '<a class="clear-float" href="#">%data%</a>';
 var googleMap = '<div id="map"></div>';
 
 // Let's Connect
-var HTMLletsConnectSocialWrapper = '<div class="lets-connect-social-wrapper row"></div>';
-var HTMLletsConnectPhone = '<div class="c-6"><i class="social-icon fa fa-phone-square" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLletsConnectEmail = '<div class="c-6"><i class="social-icon fa fa-envelope" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLletsConnectWebsite = '<div class="c-6"><i class="social-icon fa fa-globe" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLletsConnectGithub = '<div class="c-6"><i class="social-icon fa fa-github" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLletsConnectSkype = '<div class="c-6"><i class="social-icon fa fa-skype" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLletsConnectMessenger = '<div class="c-6"><i class="social-icon fa fa-facebook-official" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectSocialRow = '<div class="lets-connect-social-row row"></div>';
+var HTMLletsConnectPhone = '<div class="social-row-entry c-6"><i class="social-icon fa fa-phone-square" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectEmail = '<div class="social-row-entry c-6"><i class="social-icon fa fa-envelope" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectWebsite = '<div class="social-row-entry c-6"><i class="social-icon fa fa-globe" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectGithub = '<div class="social-row-entry c-6"><i class="social-icon fa fa-github" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectSkype = '<div class="social-row-entry c-6"><i class="social-icon fa fa-skype" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectMessenger = '<div class="social-row-entry c-6"><i class="social-icon fa fa-facebook-official" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
 
 // Footer
 var HTMLfooterCopyrightWrapper = '<div class="footer-copyright-wrapper row"></div>';
-var HTMLfooterCopyright = '<div class="c-12 copyright-text">&copy; 2017 Marios Sofokleous. Design and code are open source.</div>';
+var HTMLfooterCopyright = '<div class="c-12 copyright-text">&copy; 2017 <a href="mailto:marios.sofokleous@yandex.com">Marios Sofokleous</a>. Design and code are <a href="https://github.com/PictureElement/resume-template-html5">open source</a>.</div>';
 
 // This helper function hooks up inName() function (located in
 // resumeBuilder.js) to the button you'll be appending.
