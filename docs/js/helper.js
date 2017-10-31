@@ -48,10 +48,9 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<div class="clear-float"><em>Major: %data%</em></div>';
 var HTMLonlineCoursesStart = '<div id="online-courses-wrapper"><h3>Online Courses</h3></div>';
 var HTMLonlineCourseEntry = '<div class="online-course-entry"></div>';
-var HTMLonlineCourseTitle = '<a href="#">%data%';
-var HTMLonlineCourseSchool = ' - %data%</a>';
+var HTMLonlineCourseSchool = '<a href="#">%data%';
+var HTMLonlineCourseTitle = ' - %data%</a>';
 var HTMLonlineCourseDates = '<div class="date-text">%data%</div>';
-var HTMLonlineCourseUrl = '<a class="clear-float" href="#">%data%</a>';
 
 // Map
 var googleMap = '<div id="map"></div>';
@@ -124,7 +123,7 @@ function initializeMap() {
     var locations;
 
     var mapOptions = {
-        disableDefaultUI: true,
+        disableDefaultUI: false,
         styles: [{
             "featureType": "administrative",
             "elementType": "geometry.fill",
