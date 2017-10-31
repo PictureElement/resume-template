@@ -6,9 +6,10 @@
 // functions to replace the %data% placeholder text you see in them.
 
 // Header
+var HTMLheaderStart1 = '<div class="header-entry-1"></div>';
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span id="role">%data%</span><hr>';
-var HTMLheaderStart = '<div class="header-entry"></div>'
+var HTMLheaderRole = '<span id="role">%data%</span>';
+var HTMLheaderStart2 = '<div class="header-entry-2"></div>';
 var HTMLbioPic = '<div class="pic-wrapper"><img width="150" src="%data%" class="biopic"></div>';
 var HTMLsummaryWelcomeMsg = '<div class="welcome-message">%data%</div>';
 var HTMLsummaryStart = '<ul class="summary-list"></ul>';
@@ -55,16 +56,18 @@ var HTMLonlineCourseUrl = '<a class="clear-float" href="#">%data%</a>';
 // Map
 var googleMap = '<div id="map"></div>';
 
+// Let's Connect
+var HTMLletsConnectSocialRow = '<div class="lets-connect-social-row row"></div>';
+var HTMLletsConnectPhone = '<div class="social-row-entry c-6"><i class="social-icon fa fa-phone-square" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectEmail = '<div class="social-row-entry c-6"><i class="social-icon fa fa-envelope" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectWebsite = '<div class="social-row-entry c-6"><i class="social-icon fa fa-globe" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectGithub = '<div class="social-row-entry c-6"><i class="social-icon fa fa-github" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectSkype = '<div class="social-row-entry c-6"><i class="social-icon fa fa-skype" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectMessenger = '<div class="social-row-entry c-6"><i class="social-icon fa fa-facebook-official" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+
 // Footer
-var HTMLfooterSocialWrapper = '<div class="footer-social-wrapper row"></div>';
-var HTMLfooterPhone = '<div class="c-6"><i class="social-icon fa fa-phone-square" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterEmail = '<div class="c-6"><i class="social-icon fa fa-envelope" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterWebsite = '<div class="c-6"><i class="social-icon fa fa-globe" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterGithub = '<div class="c-6"><i class="social-icon fa fa-github" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterSkype = '<div class="c-6"><i class="social-icon fa fa-skype" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterMessenger = '<div class="c-6"><i class="social-icon fa fa-facebook-official" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
 var HTMLfooterCopyrightWrapper = '<div class="footer-copyright-wrapper row"></div>';
-var HTMLfooterCopyright = '<div class="c-12 copyright-text">&copy; 2017 Marios Sofokleous. Design and code are open source.</div>';
+var HTMLfooterCopyright = '<div class="c-12 copyright-text">&copy; 2017 <a href="mailto:marios.sofokleous@yandex.com">Marios Sofokleous</a>. Design and code are <a href="https://github.com/PictureElement/resume-template-html5">open source</a>.</div>';
 
 // This helper function hooks up inName() function (located in
 // resumeBuilder.js) to the button you'll be appending.

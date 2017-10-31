@@ -123,29 +123,32 @@ var education = {
 
 //******************************* HEADER BUILD ********************************
 
+// Append header-entry-1
+$("#header").append(HTMLheaderStart1);
+
 // Append name
 // JS replace() method
 var formattedHeaderName = HTMLheaderName.replace("%data%", bio.name);
 // jQuerry's append() method
-$("#header").append(formattedHeaderName);
+$(".header-entry-1").append(formattedHeaderName);
 
 // Append role
 var formattedHeaderRole = HTMLheaderRole.replace("%data%", bio.role);
-$("#header").append(formattedHeaderRole);
+$(".header-entry-1").append(formattedHeaderRole);
 
-// Append header-entry
-$("#header").append(HTMLheaderStart);
+// Append header-entry-2
+$("#header").append(HTMLheaderStart2);
 
 // Append pic-wrapper
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
-$(".header-entry").append(formattedBioPic);
+$(".header-entry-2").append(formattedBioPic);
+
+// Append summary-list
+$(".header-entry-2").append(HTMLsummaryStart);
 
 // Append welcome-message
 var formattedSummaryWelcomeMsg = HTMLsummaryWelcomeMsg.replace("%data%", bio.welcomeMessage);
-$(".header-entry").append(formattedSummaryWelcomeMsg);
-
-// Append summary-list
-$(".header-entry").append(HTMLsummaryStart);
+$(".summary-list").append(formattedSummaryWelcomeMsg);
 
 // Append location
 var formattedSummaryLocation = HTMLsummaryLocation.replace("%data%", bio.contacts.location);
@@ -182,7 +185,7 @@ var formattedSummaryMore = formattedSummaryMore.replace("%data3%", bio.nationali
 $(".summary-list").append(formattedSummaryMore);
 
 // Append internationalize button
-$(".header-entry").append(internationalizeButton);
+$(".header-entry-2").append(internationalizeButton);
 
 // The function replaces the original name stored in the "bio" object with an
 // international version. The function then replaces the content of #name with
@@ -340,34 +343,39 @@ education.displayOnlineCourses();
 // <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=YOUR_API_KEY_HERE"></script>  
 $("#mapDiv").append(googleMap);
 
-//******************************* FOOTER BUILD ********************************
+//**************************** LET'S CONNECT BUILD ****************************
 
 // Append social entry row
-$("#footer").append(HTMLfooterSocialWrapper);
+$("#lets-connect").append(HTMLletsConnectSocialRow);
+
 // Append phone
-var formattedFooterPhone = HTMLfooterPhone.replace("%data%", bio.contacts.phone);
-$(".footer-social-wrapper:last").append(formattedFooterPhone);
+var formattedLetsConnectPhone = HTMLletsConnectPhone.replace("%data%", bio.contacts.phone);
+$(".lets-connect-social-row:last").append(formattedLetsConnectPhone);
 // Append email
-var formattedFooterEmail = HTMLfooterEmail.replace("%data%", bio.contacts.email);
-$(".footer-social-wrapper:last").append(formattedFooterEmail);
+var formattedLetsConnectEmail = HTMLletsConnectEmail.replace("%data%", bio.contacts.email);
+$(".lets-connect-social-row:last").append(formattedLetsConnectEmail);
 
 // Append social entry row
-$("#footer").append(HTMLfooterSocialWrapper);
+$("#lets-connect").append(HTMLletsConnectSocialRow);
+
 // Append website
-var formattedFooterWebsite = HTMLfooterWebsite.replace("%data%", bio.contacts.website);
-$(".footer-social-wrapper:last").append(formattedFooterWebsite);
+var formattedLetsConnectWebsite = HTMLletsConnectWebsite.replace("%data%", bio.contacts.website);
+$(".lets-connect-social-row:last").append(formattedLetsConnectWebsite);
 // Append GitHub
-var formattedFooterGithub = HTMLfooterGithub.replace("%data%", bio.contacts.github);
-$(".footer-social-wrapper:last").append(formattedFooterGithub);
+var formattedLetsConnectGithub = HTMLletsConnectGithub.replace("%data%", bio.contacts.github);
+$(".lets-connect-social-row:last").append(formattedLetsConnectGithub);
 
 // Append social entry row
-$("#footer").append(HTMLfooterSocialWrapper);
+$("#lets-connect").append(HTMLletsConnectSocialRow);
+
 // Append Skype
-var formattedFooterSkype = HTMLfooterSkype.replace("%data%", bio.contacts.skype);
-$(".footer-social-wrapper:last").append(formattedFooterSkype);
+var formattedLetsConnectSkype = HTMLletsConnectSkype.replace("%data%", bio.contacts.skype);
+$(".lets-connect-social-row:last").append(formattedLetsConnectSkype);
 // Append Messenger
-var formattedFooterMessenger = HTMLfooterMessenger.replace("%data%", bio.contacts.messenger);
-$(".footer-social-wrapper:last").append(formattedFooterMessenger);
+var formattedLetsConnectMessenger = HTMLletsConnectMessenger.replace("%data%", bio.contacts.messenger);
+$(".lets-connect-social-row:last").append(formattedLetsConnectMessenger);
+
+//******************************* FOOTER BUILD ********************************
 
 // Append footer row
 $("#footer").append(HTMLfooterCopyrightWrapper);
