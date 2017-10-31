@@ -262,7 +262,7 @@ function initializeMap() {
         // marker is an object with additional data about the pin for a single location
 
         /* Custom marker image */
-        var image = './images/flag-map-marker.png';
+        var image = './images/placeholder.png';
 
         var marker = new google.maps.Marker({
             map: map,

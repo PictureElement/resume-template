@@ -1,11 +1,10 @@
 .node {
   cursor: pointer;
-  fill: #333;
+  fill: #565b61;
 }
 
 .node circle {
-  fill: #fff;
-  stroke: #f5ae23;
+  stroke: #6d7993;
   stroke-width: 1.5px;
 }
 
@@ -16,6 +15,6 @@
 
 .link {
   fill: none;
-  stroke: #ccc;
-  stroke-width: 1.5px;
+  stroke: #9099a2;
+  stroke-width: 1px;
 }
