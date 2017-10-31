@@ -343,34 +343,39 @@ education.displayOnlineCourses();
 // <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=YOUR_API_KEY_HERE"></script>  
 $("#mapDiv").append(googleMap);
 
-//******************************* FOOTER BUILD ********************************
+//**************************** LET'S CONNECT BUILD ****************************
 
 // Append social entry row
-$("#footer").append(HTMLfooterSocialWrapper);
+$("#lets-connect").append(HTMLletsConnectSocialWrapper);
+
 // Append phone
-var formattedFooterPhone = HTMLfooterPhone.replace("%data%", bio.contacts.phone);
-$(".footer-social-wrapper:last").append(formattedFooterPhone);
+var formattedLetsConnectPhone = HTMLletsConnectPhone.replace("%data%", bio.contacts.phone);
+$(".lets-connect-social-wrapper:last").append(formattedLetsConnectPhone);
 // Append email
-var formattedFooterEmail = HTMLfooterEmail.replace("%data%", bio.contacts.email);
-$(".footer-social-wrapper:last").append(formattedFooterEmail);
+var formattedLetsConnectEmail = HTMLletsConnectEmail.replace("%data%", bio.contacts.email);
+$(".lets-connect-social-wrapper:last").append(formattedLetsConnectEmail);
 
 // Append social entry row
-$("#footer").append(HTMLfooterSocialWrapper);
+$("#lets-connect").append(HTMLletsConnectSocialWrapper);
+
 // Append website
-var formattedFooterWebsite = HTMLfooterWebsite.replace("%data%", bio.contacts.website);
-$(".footer-social-wrapper:last").append(formattedFooterWebsite);
+var formattedLetsConnectWebsite = HTMLletsConnectWebsite.replace("%data%", bio.contacts.website);
+$(".lets-connect-social-wrapper:last").append(formattedLetsConnectWebsite);
 // Append GitHub
-var formattedFooterGithub = HTMLfooterGithub.replace("%data%", bio.contacts.github);
-$(".footer-social-wrapper:last").append(formattedFooterGithub);
+var formattedLetsConnectGithub = HTMLletsConnectGithub.replace("%data%", bio.contacts.github);
+$(".lets-connect-social-wrapper:last").append(formattedLetsConnectGithub);
 
 // Append social entry row
-$("#footer").append(HTMLfooterSocialWrapper);
+$("#lets-connect").append(HTMLletsConnectSocialWrapper);
+
 // Append Skype
-var formattedFooterSkype = HTMLfooterSkype.replace("%data%", bio.contacts.skype);
-$(".footer-social-wrapper:last").append(formattedFooterSkype);
+var formattedLetsConnectSkype = HTMLletsConnectSkype.replace("%data%", bio.contacts.skype);
+$(".lets-connect-social-wrapper:last").append(formattedLetsConnectSkype);
 // Append Messenger
-var formattedFooterMessenger = HTMLfooterMessenger.replace("%data%", bio.contacts.messenger);
-$(".footer-social-wrapper:last").append(formattedFooterMessenger);
+var formattedLetsConnectMessenger = HTMLletsConnectMessenger.replace("%data%", bio.contacts.messenger);
+$(".lets-connect-social-wrapper:last").append(formattedLetsConnectMessenger);
+
+//******************************* FOOTER BUILD ********************************
 
 // Append footer row
 $("#footer").append(HTMLfooterCopyrightWrapper);

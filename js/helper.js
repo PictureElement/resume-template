@@ -56,14 +56,16 @@ var HTMLonlineCourseUrl = '<a class="clear-float" href="#">%data%</a>';
 // Map
 var googleMap = '<div id="map"></div>';
 
+// Let's Connect
+var HTMLletsConnectSocialWrapper = '<div class="lets-connect-social-wrapper row"></div>';
+var HTMLletsConnectPhone = '<div class="c-6"><i class="social-icon fa fa-phone-square" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectEmail = '<div class="c-6"><i class="social-icon fa fa-envelope" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectWebsite = '<div class="c-6"><i class="social-icon fa fa-globe" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectGithub = '<div class="c-6"><i class="social-icon fa fa-github" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectSkype = '<div class="c-6"><i class="social-icon fa fa-skype" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+var HTMLletsConnectMessenger = '<div class="c-6"><i class="social-icon fa fa-facebook-official" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
+
 // Footer
-var HTMLfooterSocialWrapper = '<div class="footer-social-wrapper row"></div>';
-var HTMLfooterPhone = '<div class="c-6"><i class="social-icon fa fa-phone-square" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterEmail = '<div class="c-6"><i class="social-icon fa fa-envelope" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterWebsite = '<div class="c-6"><i class="social-icon fa fa-globe" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterGithub = '<div class="c-6"><i class="social-icon fa fa-github" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterSkype = '<div class="c-6"><i class="social-icon fa fa-skype" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
-var HTMLfooterMessenger = '<div class="c-6"><i class="social-icon fa fa-facebook-official" aria-hidden="true"></i><span class="social-description">%data%</span></div>';
 var HTMLfooterCopyrightWrapper = '<div class="footer-copyright-wrapper row"></div>';
 var HTMLfooterCopyright = '<div class="c-12 copyright-text">&copy; 2017 Marios Sofokleous. Design and code are open source.</div>';
 
