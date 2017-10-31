@@ -312,15 +312,13 @@ education.displayOnlineCourses = function() {
         $("#online-courses-wrapper").append(HTMLonlineCourseEntry);
 
         // Entry information
-        var formattedOnlineCourseTitle = HTMLonlineCourseTitle.replace("%data%", onlineCourse.title);
         var formattedOnlineCourseSchool = HTMLonlineCourseSchool.replace("%data%", onlineCourse.school);
+        var formattedOnlineCourseTitle = HTMLonlineCourseTitle.replace("%data%", onlineCourse.title);
         var formattedOnlineCourseDates = HTMLonlineCourseDates.replace("%data%", onlineCourse.dates);
-        var formattedOnlineCourseUrl = HTMLonlineCourseUrl.replace("%data%", onlineCourse.url);
 
         // Append entry information
-        $(".online-course-entry:last").append(formattedOnlineCourseTitle + formattedOnlineCourseSchool);
+        $(".online-course-entry:last").append(formattedOnlineCourseSchool + formattedOnlineCourseTitle);
         $(".online-course-entry:last").append(formattedOnlineCourseDates);
-        $(".online-course-entry:last").append(formattedOnlineCourseUrl);
     }
 }
 
