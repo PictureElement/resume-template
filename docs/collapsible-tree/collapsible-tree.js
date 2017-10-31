@@ -60,7 +60,7 @@ function update(source) {
 
   nodeEnter.append("circle")
       .attr("r", 1e-6)
-      .style("fill", function(d) { return d._children ? "#f5ae23" : "#fff"; });
+      .style("fill", function(d) { return d._children ? "#6d7993" : "#fff"; });
 
   nodeEnter.append("text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
@@ -76,7 +76,7 @@ function update(source) {
 
   nodeUpdate.select("circle")
       .attr("r", 4.5)
-      .style("fill", function(d) { return d._children ? "#f5ae23" : "#fff"; });
+      .style("fill", function(d) { return d._children ? "#6d7993" : "#fff"; });
 
   nodeUpdate.select("text")
       .style("fill-opacity", 1);

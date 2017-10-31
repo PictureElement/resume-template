@@ -1,20 +1,21 @@
 body {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    color: #565b61;
+    background: #f2f2f2;
 }
 
 h1 {
     font-size: 40px;
-    color: #f5a623;
+    color: #d5d5d5; 
     display: inline;
     font-family: 'Lobster', cursive;
 }
 
 h2 {
     font-size: 23px;
-    color: #333;
-    background-color: #f5ae23;
+    color: #d5d5d5;
+    background-color: #6d7993;
     padding: 20px;
     font-family: 'Lobster', cursive;
 }
@@ -22,7 +23,7 @@ h2 {
 h3 {
     font-weight: bold;
     font-size: 20px;
-    color: #000;
+    color: #565b61;
     margin-left: 20px;
 }
 
@@ -33,7 +34,7 @@ h4 {
 }
 
 p {
-    color: #333;
+    color: #565b61;
     line-height: 1.5;
 }
 
@@ -44,7 +45,7 @@ a {
     display: block;
     cursor: pointer;
     font-weight: bold;
-    color: #333;
+    color: #565b61;
 }
 
 a:hover {
@@ -67,20 +68,21 @@ img {
 }
 
 #name {
-    color: #f5ae23;
+    color: #d5d5d5;
 }
 
 #role {
     display: block;
-    color: white;
+    color: #d5d5d5;
     font-weight: 100;
 }
 
 .header-entry-1 {
     padding: 20px;
-    background: #4a4a4a;
+    /*background: #4a4a4a;------------------------------*/
+    background: #414858;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-    border-bottom: 2px solid #f5ae23;
+    border-bottom: 1px solid #3a404f;
 }
 
 /* flex container */
@@ -92,7 +94,7 @@ img {
     /* Align items vertically and horizontally */
     align-items: center;
     justify-content: center;
-    background: gray;
+    background: #9099a2;
 }
 
 /* flex item */
@@ -123,11 +125,14 @@ img {
 .button-wrapper {
     width: 100%;   
     /*border: 1px solid white;*/
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .button-wrapper button {
     border: none;
-    background-color: #f5ae23;
+    color: #d5d5d5;
+    background-color: #6d7993;
     padding: 12px 28px;
     font-weight: bold;
     cursor: pointer;
@@ -135,7 +140,7 @@ img {
 }
 
 .button-wrapper button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 img.biopic {
@@ -144,12 +149,11 @@ img.biopic {
     height: auto;
     vertical-align: middle;
     margin: 0;
-    border: 2px solid #f5ae23;
-    box-shadow: 0 1px 2px 1px #444;
+    border: 1px solid #818991;
 }
 
 .welcome-message {
-    color: white;
+    color: #d5d5d5;
     font-style: italic;
     font-weight: bold;
     font-size: 20px;
@@ -158,17 +162,13 @@ img.biopic {
 }
 
 .summary-list li {
-    color: white;
-}
-
-.summary-list li span {
-    color: #f5ae23;
+    color: #d5d5d5;
     font-weight: bold;
 }
 
-.button-wrapper {
-    margin: 0 auto;
-    margin-top: 20px;
+.summary-list li span {
+    color: #6d7993;
+    font-weight: bold;
 }
 
 /************* SKILLS *************/
@@ -201,23 +201,23 @@ img.biopic {
 }
 
 /************* MAP *************/
+
 #map {
     display: block;
-    height: 337px;
-    /*border: 5px solid red;*/
+    height: 100%;
 }
 
 #mapDiv {
     height: 400px;
     width: 100%;
-    /*border: 5px solid green;*/
+    overflow: hidden;
 }
 
 /************* LET'S CONNECT *************/
 
 /* social icons */
 .social-icon {
-    color: #f5ae23;
+    color: #9099a2;
     vertical-align: middle;
     font-size: 30px;
     width: 50px;
@@ -245,18 +245,25 @@ img.biopic {
 /************* FOOTER *************/
 
 footer {
-    background: #4a4a4a;
+    background: #414858;
     text-align: center;
     padding: 20px;
 }
 
 .copyright-text {
-    color: #999;
+    color: #6d7993;
 }
 
 footer a {
     display: inline;
-    color: #999;
+    text-decoration: none;
+    border-bottom: 1px solid #6d7993;
+    color: #6d7993;
+    font-weight: normal;
+}
+
+footer a:hover {
+    border: none;
 }
 
 /************* GENERAL *************/
@@ -264,6 +271,7 @@ footer a {
 main {
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    background: #d5d5d5;
 }
 
 .work-entry,
@@ -289,7 +297,7 @@ main {
 .location-text {
     font-style: italic;
     font-size: 14px;
-    color: #999;
+    color: #9099a2;
     line-height: 16px;
 }
 

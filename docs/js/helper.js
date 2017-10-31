@@ -79,9 +79,21 @@ $(document).ready(function() {
     });
 });
 
-/*
-The next few lines about clicks are for the Collecting Click Locations quiz in the lesson Flow Control from JavaScript Basics.
-*/
+// $(document).click() is a jQuery method (event handler).
+//
+// "document" refers to the entire web page (DOM).
+//
+// The anonymous function that gets passed into .click() method runs every
+// time a user clicks on the page.
+//
+// "loc" is a jQuery event object that contains information about the
+// click event.
+//
+// loc is passed as a parameter to the anonymous function that gets invoked
+// whenever the click event is triggered. The anonymous function itself
+// invokes a named function (logClicks) to achieve its goal.
+//
+// Anything that uses an anonymous function could also use a named function.
 var clickLocations = [];
 
 function logClicks(x, y) {
@@ -93,7 +105,8 @@ function logClicks(x, y) {
 }
 
 $(document).click(function(loc) {
-    // your code goes here!
+    // Function invocation
+    logClicks(loc.pageX, loc.pageY);
 });
 
 /*
@@ -111,7 +124,89 @@ function initializeMap() {
     var locations;
 
     var mapOptions = {
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        styles: [{
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#000000"
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#444444"
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "labels.icon",
+            "stylers": [{
+                "hue": "#ff0000"
+            }]
+        }, {
+            "featureType": "administrative.province",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#f2f2f2"
+            }]
+        }, {
+            "featureType": "landscape.man_made",
+            "elementType": "labels",
+            "stylers": [{
+                "saturation": "36"
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [{
+                "saturation": -100
+            }, {
+                "lightness": 45
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "simplified"
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#d5d5d5"
+            }, {
+                "visibility": "on"
+            }]
+        }]
+
+
+
     };
 
     /*
@@ -119,7 +214,6 @@ function initializeMap() {
     appended to #mapDiv in resumeBuilder.js.
     */
     map = new google.maps.Map(document.querySelector('#map'), mapOptions);
-
 
     /*
     locationFinder() returns an array of every location string from the JSONs
@@ -166,10 +260,15 @@ function initializeMap() {
         var bounds = window.mapBounds; // current boundaries of the map window
 
         // marker is an object with additional data about the pin for a single location
+
+        /* Custom marker image */
+        var image = './images/placeholder.png';
+
         var marker = new google.maps.Marker({
             map: map,
             position: placeData.geometry.location,
-            title: name
+            title: name,
+            icon: image
         });
 
         // infoWindows are the little helper windows that open when you click
@@ -182,6 +281,7 @@ function initializeMap() {
         // hmmmm, I wonder what this is about...
         google.maps.event.addListener(marker, 'click', function() {
             // your code goes here!
+            infoWindow.open(map, marker);
         });
 
         // this is where the pin actually gets added to the map.
