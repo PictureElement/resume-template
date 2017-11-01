@@ -231,6 +231,15 @@ img.biopic {
     width: 100%;
 }
 
+.iw-title {
+    padding: 15px;
+    background-color: #6d7993;
+    color: #d5d5d5;
+    margin: 0;
+    border-radius: 2px 2px 0 0;
+}
+
+
 /************* LET'S CONNECT *************/
 
 /* social icons */
