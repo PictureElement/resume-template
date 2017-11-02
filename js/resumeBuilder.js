@@ -40,14 +40,16 @@ var work = {
             "title": "Front-end Developer",
             "location": "New York, United States",
             "dates": "July 2014 - Aug. 2017",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit, dolor sit amet vulputate congue, lectus mi pharetra nisi, ac dignissim erat felis vitae nibh. Integer sed consectetur libero. Vestibulum eget nibh sapien. Mauris odio odio, molestie at laoreet ut, fringilla ac eros. Cras est nibh, aliquam non quam quis, lacinia semper neque. Mauris id neque neque. Maecenas arcu sem, dictum sit amet urna ac, iaculis pharetra dolor."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit, dolor sit amet vulputate congue, lectus mi pharetra nisi, ac dignissim erat felis vitae nibh. Integer sed consectetur libero. Vestibulum eget nibh sapien. Mauris odio odio, molestie at laoreet ut, fringilla ac eros. Cras est nibh, aliquam non quam quis, lacinia semper neque. Mauris id neque neque. Maecenas arcu sem, dictum sit amet urna ac, iaculis pharetra dolor.",
+            "url": "https://www.google.com/intl/en/about/"
         },
         {
             "employer": "Yandex",
             "title": "Front-end Developer",
             "location": "Moscow, Russia",
             "dates": "Oct. 2017 - May 2019",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit, dolor sit amet vulputate congue, lectus mi pharetra nisi, ac dignissim erat felis vitae nibh. Integer sed consectetur libero. Vestibulum eget nibh sapien. Mauris odio odio, molestie at laoreet ut, fringilla ac eros. Cras est nibh, aliquam non quam quis, lacinia semper neque. Mauris id neque neque. Maecenas arcu sem, dictum sit amet urna ac, iaculis pharetra dolor."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit, dolor sit amet vulputate congue, lectus mi pharetra nisi, ac dignissim erat felis vitae nibh. Integer sed consectetur libero. Vestibulum eget nibh sapien. Mauris odio odio, molestie at laoreet ut, fringilla ac eros. Cras est nibh, aliquam non quam quis, lacinia semper neque. Mauris id neque neque. Maecenas arcu sem, dictum sit amet urna ac, iaculis pharetra dolor.",
+            "url": "https://yandex.com/company/"
         }
     ]
 }
@@ -58,13 +60,15 @@ var projects = {
             "title": "Project #1",
             "dates": "Nov. 2016 - Mar. 2017",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis porttitor quam. Sed non lacus vitae lacus dapibus auctor. Nullam scelerisque quam lacus, eu aliquet nulla cursus non. Praesent venenatis diam sit amet est eleifend vehicula. Praesent pulvinar neque eu bibendum volutpat. Nunc mattis libero felis, at consectetur mauris porttitor vel. Integer mattis ante id augue semper tempor. Cras turpis nisl, maximus sed lacinia quis, eleifend eget sem. Fusce volutpat enim vitae turpis mattis, faucibus scelerisque tellus posuere. Cras maximus vitae lorem at finibus.",
-            "images": ["https://via.placeholder.com/200x100", "https://via.placeholder.com/200x100"]
+            "images": ["https://via.placeholder.com/200x100", "https://via.placeholder.com/200x100"],
+            "url": "https://github.com/PictureElement/basic-keylogger-c-plus-plus"
         },
         {
             "title": "Project #2",
             "dates": "Feb. 2016 - Present",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis porttitor quam. Sed non lacus vitae lacus dapibus auctor. Nullam scelerisque quam lacus, eu aliquet nulla cursus non. Praesent venenatis diam sit amet est eleifend vehicula. Praesent pulvinar neque eu bibendum volutpat. Nunc mattis libero felis, at consectetur mauris porttitor vel. Integer mattis ante id augue semper tempor. Cras turpis nisl, maximus sed lacinia quis, eleifend eget sem. Fusce volutpat enim vitae turpis mattis, faucibus scelerisque tellus posuere. Cras maximus vitae lorem at finibus.",
-            "images": ["https://via.placeholder.com/200x100", "https://via.placeholder.com/200x100"]
+            "images": ["https://via.placeholder.com/200x100", "https://via.placeholder.com/200x100"],
+            "url": "https://github.com/PictureElement/approximate-cvt-c-plus-plus"
         }
     ]
 }
@@ -96,14 +100,16 @@ var education = {
             "location": "Nicosia, Cyprus",
             "degree": "Bachelor of Engineering",
             "dates": "Sept. 2011 - June 2016",
-            "major": "Computer Engineering"
+            "major": "Computer Engineering",
+            "url": "http://www.ucy.ac.cy"
         },
         {
             "name": "University of Washington",
             "location": "Washington, United States",
             "degree": "Master of Science",
             "dates": "Sept. 2017 - Sept. 2018",
-            "major": "Computer Science"
+            "major": "Computer Science",
+            "url": "https://www.washington.edu/"
         }
     ],
     "onlineCourses": [{
@@ -216,7 +222,8 @@ function inName() {
 function displayWork() {
     for (var job of work.jobs) {
         $("#workExperience").append(HTMLworkStart);
-        var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", job.employer);
+        var formattedWorkEmployer = HTMLworkEmployer.replace("%data1%", job.url);
+        var formattedWorkEmployer = formattedWorkEmployer.replace("%data2%", job.employer);
         var formattedWorkTitle = HTMLworkTitle.replace("%data%", job.title);
         var formattedWorkLocation = HTMLworkLocation.replace("%data%", job.location);
         var formattedWorkDates = HTMLworkDates.replace("%data%", job.dates);
@@ -247,7 +254,8 @@ projects.display = function() {
         $("#projects").append(HTMLprojectStart);
 
         // Entry information
-        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", project.title);
+        var formattedProjectTitle = HTMLprojectTitle.replace("%data1%", project.url);
+        var formattedProjectTitle = formattedProjectTitle.replace("%data2%", project.title);
         var formattedProjectDates = HTMLprojectDates.replace("%data%", project.dates);
         var formattedProjectDescription = HTMLprojectDescription.replace("%data%", project.description);
 
@@ -283,7 +291,8 @@ education.displaySchools = function() {
         $("#schools-wrapper").append(HTMLschoolEntry);
 
         // Entry information
-        var formattedSchoolName = HTMLschoolName.replace("%data%", school.name);
+        var formattedSchoolName = HTMLschoolName.replace("%data1%", school.url);
+        var formattedSchoolName = formattedSchoolName.replace("%data2%", school.name);
         var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
         var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", school.major);
         var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", school.location);
@@ -312,7 +321,8 @@ education.displayOnlineCourses = function() {
         $("#online-courses-wrapper").append(HTMLonlineCourseEntry);
 
         // Entry information
-        var formattedOnlineCourseSchool = HTMLonlineCourseSchool.replace("%data%", onlineCourse.school);
+        var formattedOnlineCourseSchool = HTMLonlineCourseSchool.replace("%data1%", onlineCourse.url);
+        var formattedOnlineCourseSchool = formattedOnlineCourseSchool.replace("%data2%", onlineCourse.school);
         var formattedOnlineCourseTitle = HTMLonlineCourseTitle.replace("%data%", onlineCourse.title);
         var formattedOnlineCourseDates = HTMLonlineCourseDates.replace("%data%", onlineCourse.dates);
 
