@@ -157,7 +157,7 @@
           }]
         },
         {
-          "name": "Deployment",
+          "name": "Web hosting",
           "children": [{
               "name": "cPanel",
               "size": 71
