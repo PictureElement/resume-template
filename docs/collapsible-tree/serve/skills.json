@@ -115,15 +115,23 @@
                   ]
                 },
                 {
+                  "name": "Data interchange formats",
+                  "children": [{
+                    "name": "JSON",
+                    "size": 73
+                  }]
+                },
+                {
                   "name": "Libraries",
                   "children": [{
-                    "name": "jQuerry",
-                    "size": 19
-                  },
-                  {
-                    "name": "D3.js",
-                    "size": 70
-                  }]
+                      "name": "jQuerry",
+                      "size": 19
+                    },
+                    {
+                      "name": "D3.js",
+                      "size": 70
+                    }
+                  ]
                 },
                 {
                   "name": "Frameworks",
@@ -147,6 +155,18 @@
             "name": "WordPress.org",
             "size": 22
           }]
+        },
+        {
+          "name": "Deployment",
+          "children": [{
+              "name": "cPanel",
+              "size": 71
+            },
+            {
+              "name": "Bluehost",
+              "size": 72
+            }
+          ]
         },
         {
           "name": "Essential",
