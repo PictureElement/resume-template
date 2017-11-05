@@ -29,12 +29,24 @@
               ]
             },
             {
-              "name": "AWD",
-              "size": 6
-            },
-            {
-              "name": "RWD",
-              "size": 7
+              "name": "Responsive & Adaptive web design",
+              "children": [{
+                  "name": "Common responsive patterns",
+                  "size": 6
+                },
+                {
+                  "name": "Media queries",
+                  "size": 7
+                },
+                {
+                  "name": "Flexbox",
+                  "size": 74
+                },
+                {
+                  "name": "Responsive images",
+                  "size": 75
+                }
+              ]
             },
             {
               "name": "Web authoring & debugging",
