@@ -107,7 +107,7 @@
                   }]
                 },
                 {
-                  "name": "Semantics",
+                  "name": "Semantic HTML",
                   "size": 16
                 }
               ]
@@ -164,7 +164,7 @@
         {
           "name": "CMS",
           "children": [{
-            "name": "WordPress.org",
+            "name": "WordPress",
             "size": 22
           }]
         },
@@ -191,7 +191,7 @@
               "size": 24
             },
             {
-              "name": "Linux CLI",
+              "name": "Linux",
               "size": 25
             },
             {
@@ -256,6 +256,10 @@
           ]
         },
         {
+          "name": "JavaScript",
+          "size": 76
+        },
+        {
           "name": "R",
           "size": 36
         },
@@ -266,6 +270,10 @@
         {
           "name": "MIPS assembly",
           "size": 38
+        },
+        {
+          "name": "Algorithms",
+          "size": 77
         }
       ]
     },
