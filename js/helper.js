@@ -66,7 +66,7 @@ var HTMLletsConnectMessenger = '<div class="social-row-entry c-6"><i class="soci
 
 // Footer
 var HTMLfooterCopyrightWrapper = '<div class="footer-copyright-wrapper row"></div>';
-var HTMLfooterCopyright = '<div class="c-12 copyright-text">&copy; 2017 <a href="mailto:marios.sofokleous@yandex.com">Marios Sofokleous</a>. Design and code are <a href="https://github.com/PictureElement/resume-template-html5">open source</a>.</div>';
+var HTMLfooterCopyright = '<div class="c-12 copyright-text">&copy; 2017 <a href="https://pictureelement.github.io/portfolio-2/">PictureElement</a> (Marios Sofokleous). Design and code are <a href="https://github.com/PictureElement/resume-template">open source</a>.</div>';
 
 // This helper function hooks up inName() function (located in
 // resumeBuilder.js) to the button you'll be appending.
